@@ -8,7 +8,7 @@
       "aboutus": "Nosotros",
       "services": "Servicios",
       "portfolio": "Portafolio",
-      "gallery": "Galeria",
+      "gallery": "Galería",
       "testimony": "Testimonio",
       "contact": "Contacto",
       "button": "754-248-7978"
@@ -62,32 +62,32 @@
       {
         "title.1": "Cámaras de Seguridad",
         "paragraph.1": "Utilizamos tecnología avanzada en la instalación de cámaras de seguridad, para asegurarnos de que estés siempre protegido.",
-        "button.1": "Leer mas"
+        "button.1": "Leer más"
       },
       {
         "title.2": "Voz/Datos",
         "paragraph.2": "Instalamos sistemas de voz y datos para que estés siempre conectado y puedas trabajar o disfrutar de tu ocio sin interrupciones.",
-        "button.2": "Leer mas"
+        "button.2": "Leer más"
       },
       {
         "title.3": "Iluminación",
         "paragraph.3": "Crea ambientes únicos y especiales con la iluminación adecuada para tu jardín o terraza.",
-        "button.3": "Leer mas"
+        "button.3": "Leer más"
       },
       {
         "title.4": "Instalación de TV",
         "paragraph.4": "Disfruta de la mejor experiencia audiovisual en tu hogar o negocio con nuestras instalaciones de televisores.",
-        "button.4": "Leer mas"
+        "button.4": "Leer más"
       },
       {
         "title.5": "Sistema de Sonido",
         "paragraph.5": "Instalamos sistemas de audio de alta gama para que puedas escuchar tus contenidos favoritos con la mejor calidad.",
-        "button.5": "Leer mas"
+        "button.5": "Leer más"
       },
       {
         "title.6": "Servicio de Mantenimiento",
         "paragraph.6": "Equipo profesional para instalaciones seguras y duraderas, manteniendo sistemas en óptimo estado.",
-        "button.6": "Leer mas"
+        "button.6": "Leer más"
       }
     ]
   },
