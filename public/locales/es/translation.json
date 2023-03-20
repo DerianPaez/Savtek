@@ -92,8 +92,9 @@
     ]
   },
 
-  "home": {
+  "portfolio": {
     "content": {
+      "type": "Casa",
       "title": "Instalación de TV",
       "paragraph": "En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
     }
@@ -168,7 +169,7 @@
       },
       {
         "title.3": "Legal",
-        "links": ["Terminos de condiciones", "Politica de privacidad"]
+        "links": ["Términos de condiciones", "Política de privacidad"]
       }
     ],
     "copyright": "Copyright © 2023 Savtek Systems | All rights reserved"

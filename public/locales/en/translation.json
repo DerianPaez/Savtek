@@ -4,13 +4,13 @@
 
   "header": {
     "menu": {
-      "home": "Inicio",
-      "aboutus": "Nosotros",
-      "services": "Servicios",
-      "portfolio": "Portafolio",
-      "gallery": "Galeria",
-      "testimony": "Testimonio",
-      "contact": "Contacto",
+      "home": "Home",
+      "aboutus": "About us",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "gallery": "Gallery",
+      "testimony": "Testimonials",
+      "contact": "Contact",
       "button": "754-248-7978"
     }
   },
@@ -18,112 +18,113 @@
   "banner": {
     "content": {
       "legend": "Savtek System",
-      "title": "Ofrecemos Seguridad Inteligente",
-      "paragraph": "Protege lo que más importa con nuestros sistemas de seguridad inteligente. Monitorea tu hogar, negocio o empresa en tiempo real y recibe alertas instantáneas en tu dispositivo móvil.",
-      "button": "Contáctanos"
+      "title": "We offer Smart Security",
+      "paragraph": "Protect what matters most with our smart security systems. Monitor your home, business or company in real-time and receive instant alerts on your mobile device.",
+      "button": "Contact us"
     }
   },
 
   "bar": [
     {
-      "title.1": "Soluciones Personalizadas",
-      "paragraph.1": "Diseñamos una solución de seguridad personalizada que se adapte a tu hogar o negocio."
+      "title.1": "Customized Solutions",
+      "paragraph.1": "We design a personalized security solution that fits your home or business."
     },
     {
-      "title.2": "Experiencia & Conocimiento",
-      "paragraph.2": "Con más de 7 años de experiencia en la industria, somos expertos en instalación y mantenimiento de sistemas de seguridad."
+      "title.2": "Experience & Knowledge",
+      "paragraph.2": "With over 7 years of experience in the industry, we are experts in the installation and maintenance of security systems."
     },
     {
-      "title.3": "Excelente servicio al cliente",
-      "paragraph.3": "Hace falta"
+      "title.3": "Excellent Customer Service",
+      "paragraph.3": "We are committed to providing exceptional service from consultation to project completion."
     }
   ],
 
   "aboutus": {
     "content": {
-      "title": "Sobre Nosotros",
-      "paragraph": "SAVTEK Systems es una empresa especializada en servicios de instalación y mantenimiento de sistemas de seguridad. Fundada en 2016 por Saúl Ibarra, hemos estado brindando soluciones innovadoras y confiables a nuestros clientes durante los últimos 7 años.",
+      "title": "About Us",
+      "paragraph": "SAVTEK Systems is a company specialized in installation and maintenance services of security systems. Founded in 2016 by Saul Ibarra, we have been providing innovative and reliable solutions to our customers for the last 7 years.",
       "values": [
         {
-          "title.1": "Visión",
-          "paragraph.1": "Nos esforzamos por ser líderes en nuestro sector, impulsando el crecimiento y la innovación continua, mientras mantenemos nuestro compromiso con la excelencia y la satisfacción del cliente."
+          "title.1": "Vision",
+          "paragraph.1": "We strive to be leaders in our industry, driving growth and continuous innovation while maintaining our commitment to excellence and customer satisfaction."
         },
         {
-          "title.2": "Misión",
-          "paragraph.1": "Nuestra misión es proporcionar soluciones innovadoras y de alta calidad que superen las expectativas de nuestros clientes y mejoren su calidad de vida."
+          "title.2": "Mision",
+          "paragraph.1": "Our mission is to provide innovative, high-quality solutions that exceed our customers' expectations and improve their quality of life."
         }
       ],
-      "button": "Contáctanos"
+      "button": "Contact Us"
     }
   },
 
   "services": {
     "content": [
       {
-        "title.1": "Cámaras de Seguridad",
-        "paragraph.1": "Utilizamos tecnología avanzada en la instalación de cámaras de seguridad, para asegurarnos de que estés siempre protegido.",
-        "button.1": "Leer mas"
+        "title.1": "Security Cameras",
+        "paragraph.1": "We use advanced technology in the installation of security cameras to ensure you are always protected.",
+        "button.1": "Read more"
       },
       {
-        "title.2": "Voz/Datos",
-        "paragraph.2": "Instalamos sistemas de voz y datos para que estés siempre conectado y puedas trabajar o disfrutar de tu ocio sin interrupciones.",
-        "button.2": "Leer mas"
+        "title.2": "Voice/Data",
+        "paragraph.2": "We install voice and data systems to keep you connected, so you can work or enjoy your leisure time uninterrupted.",
+        "button.2": "Read more"
       },
       {
-        "title.3": "Iluminación",
-        "paragraph.3": "Crea ambientes únicos y especiales con la iluminación adecuada para tu jardín o terraza.",
-        "button.3": "Leer mas"
+        "title.3": "Landscape Lighting",
+        "paragraph.3": "Create unique and special atmospheres with the right lighting for your garden or terrace.",
+        "button.3": "Read more"
       },
       {
-        "title.4": "Instalación de TV",
-        "paragraph.4": "Disfruta de la mejor experiencia audiovisual en tu hogar o negocio con nuestras instalaciones de televisores.",
-        "button.4": "Leer mas"
+        "title.4": "TV Installation",
+        "paragraph.4": "Enjoy the best audiovisual experience in your home or business with our television installations.",
+        "button.4": "Read more"
       },
       {
-        "title.5": "Sistema de Sonido",
-        "paragraph.5": "Instalamos sistemas de audio de alta gama para que puedas escuchar tus contenidos favoritos con la mejor calidad.",
-        "button.5": "Leer mas"
+        "title.5": "Audio System",
+        "paragraph.5": "We install high-end audio systems so you can listen to your favorite content with the best quality.",
+        "button.5": "Read more"
       },
       {
-        "title.6": "Servicio de Mantenimiento",
-        "paragraph.6": "Equipo profesional para instalaciones seguras y duraderas, manteniendo sistemas en óptimo estado.",
-        "button.6": "Leer mas"
+        "title.6": "Service & Maintenance",
+        "paragraph.6": "Professional equipment for secure and durable installations, maintaining systems in optimal condition.",
+        "button.6": "Read more"
       }
     ]
   },
 
-  "home": {
+  "portfolio": {
     "content": {
-      "title": "Instalación de TV",
-      "paragraph": "En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
+      "type": "Home",
+      "title": "TV Installation",
+      "paragraph": "In this project, we installed two televisions and a soundbar in a living room and a master bedroom. We used high-quality wall mounts to ensure optimal viewing and no cable clutter. We also configured the televisions to connect to media streaming devices."
     }
   },
 
-  "ourbrands": {
+  "gallery": {
     "content": {
-      "title": "Nuestras marcas",
-      "paragraph": "Hemos tenido el placer de trabajar con una amplia variedad de clientes, desde pequeñas empresas hasta grandes corporaciones. Algunos de nuestros clientes satisfechos incluyen:"
+      "title": "Our Brands",
+      "paragraph": "We have had the pleasure of working with a wide variety of clients, from small businesses to large corporations. Some of our satisfied clients include:"
     }
   },
 
   "testimonies": {
     "content": {
-      "title": "Testimonios",
-      "paragraph": "Nos esforzamos por ofrecer servicios de seguridad excepcionales y satisfacer a nuestros clientes. Esto es lo que algunos de ellos tienen que decir acerca de nuestro trabajo:",
+      "title": "Testimonials",
+      "paragraph": "We strive to offer exceptional security services and satisfy our customers. Here's what some of them have to say about our work:",
       "items": [
         {
           "person.1": "Sophia Clark",
-          "role.1": "Cliente",
+          "role.1": "Client",
           "paragraph": "Hace falta"
         },
         {
           "person.2": "Marcus Thuram",
-          "role.2": "Cliente",
+          "role.2": "Client",
           "paragraph": "Hace falta"
         },
         {
           "person.3": "Jade Smith",
-          "role.3": "Cliente",
+          "role.3": "Client",
           "paragraph": "Hace falta"
         }
       ]
@@ -132,26 +133,26 @@
 
   "advertising": {
     "content": {
-      "paragraph": "Monitoreo en tiempo real de sus soluciones de infraestructura",
-      "button": "¡Llama Ahora!"
+      "paragraph": "Real time Monitoring Your Infraestructure Solutions",
+      "button": "¡Call Now!!"
     }
   },
 
   "contactus": {
     "content": {
-      "title": "Contáctanos",
+      "title": "Contact Us",
       "phone": "754-248-7978",
       "email": "sibarra@savteksystems.com",
       "address": "6278 N Federal Hwy #122, Fort Lauderdale, FL 33308",
       "form": {
         "labels": {
-          "name": "Nombre",
-          "email": "Correo",
-          "phone": "Teléfono",
-          "distributedsystems": "Sistemas distribuidos",
-          "message": "Mensaje"
+          "name": "Name",
+          "email": "Email",
+          "phone": "Phone",
+          "distributedsystems": "Distributed Systems ",
+          "message": "Message"
         },
-        "button": "Enviar"
+        "button": "Send"
       }
     }
   },
@@ -160,15 +161,15 @@
     "content": [
       {
         "title.1": "Servicios",
-        "links": ["Instalación de cámaras ", "Voz/Datos", "Instalación de TV", "Iluminación", "Sistema de Audio"]
+        "links": ["Security Cameras ", "Voice/Data", "TV Installation", "Landscape Lighting", "Audio System"]
       },
       {
-        "title.2": "Enlaces",
-        "links": ["Sobre Nosotros", "Servicios", "Portafolio", "Nuestros Clientes", "Contáctanos "]
+        "title.2": "Company",
+        "links": ["About Us", "Services", "Portfolio", "Our clients", "Contact us"]
       },
       {
         "title.3": "Legal",
-        "links": ["Terminos de condiciones", "Politica de privacidad"]
+        "links": ["Terms of use", "Privacy Policy"]
       }
     ],
     "copyright": "Copyright © 2023 Savtek Systems | All rights reserved"
