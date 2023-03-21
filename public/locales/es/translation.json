@@ -58,6 +58,7 @@
   },
 
   "services": {
+    "title": "Servicios",
     "content": [
       {
         "title.1": "Cámaras de Seguridad",
@@ -134,7 +135,8 @@
   "advertising": {
     "content": {
       "paragraph": "Monitoreo en tiempo real de sus soluciones de infraestructura",
-      "button": "¡Llama Ahora!"
+      "button": "¡Llama Ahora!",
+      "image": "Cámara de seguridad"
     }
   },
 

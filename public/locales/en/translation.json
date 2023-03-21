@@ -58,6 +58,7 @@
   },
 
   "services": {
+    "title": "Services",
     "content": [
       {
         "title.1": "Security Cameras",
@@ -134,7 +135,8 @@
   "advertising": {
     "content": {
       "paragraph": "Real time Monitoring Your Infraestructure Solutions",
-      "button": "¡Call Now!!"
+      "button": "¡Call Now!!",
+      "image": "Security Camera"
     }
   },
 
