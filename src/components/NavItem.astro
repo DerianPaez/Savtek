@@ -1,0 +1,9 @@
+---
+const { to, className } = Astro.props
+---
+
+<li class={`list-none ${className}`}>
+  <a href='#' class='text-white hover:text-gray' href={to}>
+    <slot />
+  </a>
+</li>

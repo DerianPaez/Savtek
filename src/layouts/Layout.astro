@@ -1,6 +1,7 @@
 ---
 import i18next, { t } from 'i18next'
 import { HeadHrefLangs } from 'astro-i18next/components'
+import '@fontsource/inter'
 ---
 
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ import { HeadHrefLangs } from 'astro-i18next/components'
         --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
       }
       html {
-        font-family: system-ui, sans-serif;
+        font-family: 'Inter', 'InterVariable', sans-serif;
         background-color: #f6f6f6;
       }
       code {
@@ -30,5 +31,6 @@ import { HeadHrefLangs } from 'astro-i18next/components'
           Courier New, monospace;
       }
     </style>
+    <script is:inline src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js'></script>
   </body>
 </html>

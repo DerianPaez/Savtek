@@ -1,0 +1,100 @@
+---
+import NavItem from './NavItem.astro'
+import Button from './Button.astro'
+import { t } from 'i18next'
+const { id, className } = Astro.props
+---
+
+<nav id={id} class={className}>
+  <div
+    class='bg-black h-screen w-screen fixed top-0 bottom-0 right-0 left-0 flex gap-5 justify-center items-center text-center lg:h-20 lg:w-auto lg:static lg:bg-none'
+  >
+    <div id='close-menu' class='absolute top-7 right-6 lg:hidden'>
+      <svg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M24.5 24.5L2 2M24.5 2L2 24.5'
+          stroke='white'
+          stroke-width='3.14286'
+          stroke-linecap='round'
+          stroke-linejoin='round'></path>
+      </svg>
+    </div>
+
+    <ul class='flex flex-col gap-4 justify-center items-center lg:flex-row'>
+      <NavItem className='item-close-menu' href='#'>
+        {t('header.menu.home')}
+      </NavItem>
+      <NavItem className='item-close-menu' href='#'>
+        {t('header.menu.aboutUs')}
+      </NavItem>
+
+      <a
+        href='#'
+        id='dropdownDefaultButton'
+        data-dropdown-toggle='dropdown'
+        class='text-white flex items-center hover:text-gray'
+        >{t('header.menu.services')}
+        <svg
+          class='w-4 h-4 ml-2'
+          aria-hidden='true'
+          fill='none'
+          stroke='currentColor'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'
+          ><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg
+        ></a
+      >
+      <div id='dropdown' class='z-10 hidden bg-blue rounded-lg shadow w-48'>
+        <ul class='py-2 text-sm text-white lg:text-left' aria-labelledby='dropdownDefaultButton'>
+          <li>
+            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.0.title.1')}</a>
+          </li>
+          <li>
+            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.1.title.2')}</a>
+          </li>
+          <li>
+            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.2.title.3')}</a>
+          </li>
+          <li>
+            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.3.title.4')}</a>
+          </li>
+          <li>
+            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.4.title.5')}</a>
+          </li>
+          <li>
+            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.5.title.6')}</a>
+          </li>
+        </ul>
+      </div>
+      <NavItem href='#'>
+        {t('header.menu.portfolio')}
+      </NavItem>
+      <NavItem href='#'>
+        {t('header.menu.testimonials')}
+      </NavItem>
+      <NavItem href='#'>
+        {t('header.menu.gallery')}
+      </NavItem>
+      <NavItem href='#'>
+        {t('header.menu.contact')}
+      </NavItem>
+    </ul>
+    <div class='absolute bottom-6 lg:hidden'>
+      <Button icon='./icons/Cellphone1.svg' name='754-248-7978' />
+    </div>
+  </div>
+</nav>
+
+<script>
+  const closeMenu = document.getElementById('close-menu')
+  const itemCloseMenu = document.querySelectorAll('.item-close-menu')
+  const menu = document.getElementById('menu')
+
+  closeMenu.addEventListener('click', () => {
+    menu.classList.replace('flex', 'hidden')
+  })
+
+  itemCloseMenu.forEach((item) => {
+    console.log(item)
+  })
+</script>

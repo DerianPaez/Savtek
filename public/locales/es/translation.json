@@ -5,11 +5,11 @@
   "header": {
     "menu": {
       "home": "Inicio",
-      "aboutus": "Nosotros",
+      "aboutUs": "Nosotros",
       "services": "Servicios",
       "portfolio": "Portafolio",
+      "testimonials": "Testimonios",
       "gallery": "Galeria",
-      "testimony": "Testimonio",
       "contact": "Contacto",
       "button": "754-248-7978"
     }
