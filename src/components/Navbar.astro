@@ -21,15 +21,14 @@ const { id, className } = Astro.props
     </div>
 
     <ul class='flex flex-col gap-4 justify-center items-center lg:flex-row'>
-      <NavItem className='item-close-menu' href='#'>
+      <NavItem className='item-close-menu' href=''>
         {t('header.menu.home')}
       </NavItem>
-      <NavItem className='item-close-menu' href='#'>
+      <NavItem className='item-close-menu' href={`/${t('header.menu.aboutUs')}`}>
         {t('header.menu.aboutUs')}
       </NavItem>
 
-      <a
-        href='#'
+      <button
         id='dropdownDefaultButton'
         data-dropdown-toggle='dropdown'
         class='text-white flex items-center hover:text-gray'
@@ -42,45 +41,46 @@ const { id, className } = Astro.props
           viewBox='0 0 24 24'
           xmlns='http://www.w3.org/2000/svg'
           ><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg
-        ></a
-      >
-      <div id='dropdown' class='z-10 hidden bg-blue rounded-lg shadow w-48'>
-        <ul class='py-2 text-sm text-white lg:text-left' aria-labelledby='dropdownDefaultButton'>
-          <li>
-            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.0.title.1')}</a>
-          </li>
-          <li>
-            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.1.title.2')}</a>
-          </li>
-          <li>
-            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.2.title.3')}</a>
-          </li>
-          <li>
-            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.3.title.4')}</a>
-          </li>
-          <li>
-            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.4.title.5')}</a>
-          </li>
-          <li>
-            <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.5.title.6')}</a>
-          </li>
-        </ul>
-      </div>
-      <NavItem href='#'>
+        >
+        <div id='dropdown' class='z-10 hidden bg-blue rounded-lg shadow w-48'>
+          <ul class='py-2 text-sm text-white lg:text-left' aria-labelledby='dropdownDefaultButton'>
+            <li class='item-close-menu'>
+              <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.0.title.1')}</a>
+            </li>
+            <li class='item-close-menu'>
+              <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.1.title.2')}</a>
+            </li>
+            <li class='item-close-menu'>
+              <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.2.title.3')}</a>
+            </li>
+            <li class='item-close-menu'>
+              <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.3.title.4')}</a>
+            </li>
+            <li class='item-close-menu'>
+              <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.4.title.5')}</a>
+            </li>
+            <li class='item-close-menu'>
+              <a href='#' class='block px-4 py-2 hover:text-gray'>{t('services.content.5.title.6')}</a>
+            </li>
+          </ul>
+        </div>
+      </button>
+
+      <NavItem className='item-close-menu' href='#'>
         {t('header.menu.portfolio')}
       </NavItem>
-      <NavItem href='#'>
+      <NavItem className='item-close-menu' href='#'>
         {t('header.menu.testimonials')}
       </NavItem>
-      <NavItem href='#'>
+      <NavItem className='item-close-menu' href='#'>
         {t('header.menu.gallery')}
       </NavItem>
-      <NavItem href='#'>
+      <NavItem className='item-close-menu' href='#'>
         {t('header.menu.contact')}
       </NavItem>
     </ul>
-    <div class='absolute bottom-6 lg:hidden'>
-      <Button icon='./icons/Cellphone1.svg' name='754-248-7978' />
+    <div class='absolute bottom-6 lg:hidden item-close-menu'>
+      <Button icon='./icons/Cellphone1.svg' name={t('header.menu.button')} />
     </div>
   </div>
 </nav>
@@ -95,6 +95,8 @@ const { id, className } = Astro.props
   })
 
   itemCloseMenu.forEach((item) => {
-    console.log(item)
+    item.addEventListener('click', () => {
+      menu.classList.replace('flex', 'hidden')
+    })
   })
 </script>
