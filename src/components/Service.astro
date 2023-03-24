@@ -1,11 +1,11 @@
 ---
 import { t } from 'i18next'
-const { icon, title, paragraph, button } = Astro.props
+const { icon, title, paragraph, link } = Astro.props
 ---
 
 <article>
   <img src={icon} alt={title} />
   <h3>{title}</h3>
   <p>{paragraph}</p>
-  <button>{button}</button>
+  <a href=''>{link}</a>
 </article>

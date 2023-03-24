@@ -1,13 +1,16 @@
 ---
-import { changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Wrapper from "../components/Wrapper.astro";
-
-changeLanguage("en");
+import { changeLanguage } from 'i18next'
+import Layout from '../layouts/Layout.astro'
+import Wrapper from '../components/Wrapper.astro'
+import Banner from '../components/Banner.astro'
+import Services from '../components/Services.astro'
+changeLanguage('en')
 ---
 
 <Layout title='Welcome to Astro.'>
   <Wrapper>
     <h1>Halo</h1>
+    <Banner />
+    <Services />
   </Wrapper>
 </Layout>
