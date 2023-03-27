@@ -1,6 +1,7 @@
 ---
 import i18next, { t } from 'i18next'
 import { HeadHrefLangs } from 'astro-i18next/components'
+
 import '@fontsource/inter'
 ---
 
@@ -20,17 +21,29 @@ import '@fontsource/inter'
     <style is:global>
       :root {
         --accent: 124, 58, 237;
-        --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
       }
       html {
         font-family: 'Inter', 'InterVariable', sans-serif;
         background-color: #f6f6f6;
       }
+      body {
+        background-color: #000000;
+        color: #ffffff;
+      }
       code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
-          Courier New, monospace;
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
     </style>
-    <script is:inline src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js'></script>
+    <script
+      is:inline
+      src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js'
+    ></script>
   </body>
 </html>
