@@ -45,12 +45,12 @@
       "paragraph": "SAVTEK Systems is a company specialized in installation and maintenance services of security systems. Founded in 2016 by Saul Ibarra, we have been providing innovative and reliable solutions to our customers for the last 7 years.",
       "values": [
         {
-          "title.1": "Vision",
-          "paragraph.1": "We strive to be leaders in our industry, driving growth and continuous innovation while maintaining our commitment to excellence and customer satisfaction."
+          "title": "Vision",
+          "paragraph": "We strive to be leaders in our industry, driving growth and continuous innovation while maintaining our commitment to excellence and customer satisfaction."
         },
         {
-          "title.2": "Mision",
-          "paragraph.1": "Our mission is to provide innovative, high-quality solutions that exceed our customers' expectations and improve their quality of life."
+          "title": "Mision",
+          "paragraph": "Our mission is to provide innovative, high-quality solutions that exceed our customers' expectations and improve their quality of life."
         }
       ],
       "button": "Contact Us"
@@ -61,34 +61,34 @@
     "title": "Services",
     "content": [
       {
-        "title.1": "Security Cameras",
-        "paragraph.1": "We use advanced technology in the installation of security cameras to ensure you are always protected.",
-        "button.1": "Read more"
+        "title": "Security Cameras",
+        "paragraph": "We use advanced technology in the installation of security cameras to ensure you are always protected.",
+        "link": "Read more"
       },
       {
-        "title.2": "Voice/Data",
-        "paragraph.2": "We install voice and data systems to keep you connected, so you can work or enjoy your leisure time uninterrupted.",
-        "button.2": "Read more"
+        "title": "Voice/Data",
+        "paragraph": "We install voice and data systems to keep you connected, so you can work or enjoy your leisure time uninterrupted.",
+        "link": "Read more"
       },
       {
-        "title.3": "Landscape Lighting",
-        "paragraph.3": "Create unique and special atmospheres with the right lighting for your garden or terrace.",
-        "button.3": "Read more"
+        "title": "Landscape Lighting",
+        "paragraph": "Create unique and special atmospheres with the right lighting for your garden or terrace.",
+        "link": "Read more"
       },
       {
-        "title.4": "TV Installation",
-        "paragraph.4": "Enjoy the best audiovisual experience in your home or business with our television installations.",
-        "button.4": "Read more"
+        "title": "TV Installation",
+        "paragraph": "Enjoy the best audiovisual experience in your home or business with our television installations.",
+        "link": "Read more"
       },
       {
-        "title.5": "Audio System",
-        "paragraph.5": "We install high-end audio systems so you can listen to your favorite content with the best quality.",
-        "button.5": "Read more"
+        "title": "Audio System",
+        "paragraph": "We install high-end audio systems so you can listen to your favorite content with the best quality.",
+        "link": "Read more"
       },
       {
-        "title.6": "Service & Maintenance",
-        "paragraph.6": "Professional equipment for secure and durable installations, maintaining systems in optimal condition.",
-        "button.6": "Read more"
+        "title": "Service & Maintenance",
+        "paragraph": "Professional equipment for secure and durable installations, maintaining systems in optimal condition.",
+        "link": "Read more"
       }
     ]
   },
@@ -163,11 +163,23 @@
     "content": [
       {
         "title.1": "Servicios",
-        "links": ["Security Cameras ", "Voice/Data", "TV Installation", "Landscape Lighting", "Audio System"]
+        "links": [
+          "Security Cameras ",
+          "Voice/Data",
+          "TV Installation",
+          "Landscape Lighting",
+          "Audio System"
+        ]
       },
       {
         "title.2": "Company",
-        "links": ["About Us", "Services", "Portfolio", "Our clients", "Contact us"]
+        "links": [
+          "About Us",
+          "Services",
+          "Portfolio",
+          "Our clients",
+          "Contact us"
+        ]
       },
       {
         "title.3": "Legal",

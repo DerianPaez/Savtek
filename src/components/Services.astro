@@ -1,22 +1,39 @@
 ---
 import { t } from 'i18next'
 import Service from './Service.astro'
+
+const serviceObject = t('services.content', { returnObjects: true })
+const serviceList = Object.values(serviceObject)
+const serviceListIcons = [
+  '/icons/Camera.svg',
+  '/icons/Voice.svg',
+  '/icons/Lightning.svg',
+  '/icons/Tv.svg',
+  '/icons/Audio.svg',
+  '/icons/Maintenance.svg'
+]
 ---
 
 <section>
-  <div>
-    <h2>{t('services.title')}</h2>
-    <Service
-      icon='/icons/Camera.svg'
-      title={t('services.content.0.title.1')}
-      paragraph={t('services.content.0.paragraph.1')}
-      link={t('services.content.0.button.1')}
-    />
-    <Service
-      icon='/icons/Voice.svg'
-      title={t('services.content.1.title.2')}
-      paragraph={t('services.content.1.paragraph.2')}
-      link={t('services.content.1.button.2')}
-    />
+  <div class='px-[4%] py-[100px] grid gap-8 lg:gap-14 items-center'>
+    <h2 class='text-3xl font-bold lg:text-5xl text-white text-center'>
+      {t('services.title')}
+    </h2>
+    <div class='grid gap-x-14 gap-y-8 sm:grid-cols-2 lg:grid-cols-3'>
+      {
+        serviceList.map((service, index) => {
+          return (
+            <Service
+              icon={serviceListIcons[index]}
+              title={service.title}
+              paragraph={service.paragraph}
+              link={service.link}
+            />
+          )
+        })
+      }
+    </div>
   </div>
 </section>
+
+<script></script>

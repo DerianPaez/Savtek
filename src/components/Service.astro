@@ -3,9 +3,13 @@ import { t } from 'i18next'
 const { icon, title, paragraph, link } = Astro.props
 ---
 
-<article>
-  <img src={icon} alt={title} />
-  <h3>{title}</h3>
-  <p>{paragraph}</p>
-  <a href=''>{link}</a>
+<article class='grid place-items-center gap-6 py-9 px-6'>
+  <figure class='w-[64px] h-[54px]'>
+    <img class='w-full h-full' src={icon} alt={title} />
+  </figure>
+  <div class='grid place-items-center gap-2'>
+    <h3 class='text-2xl font-semibold text-center'>{title}</h3>
+    <p class='text-[#B5BCCB] leading-8 text-center'>{paragraph}</p>
+    <a class='text-lg text-primary underline text-center' href=''>{link}</a>
+  </div>
 </article>
