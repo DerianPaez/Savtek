@@ -1,0 +1,33 @@
+---
+import { t } from 'i18next'
+import Testimonial from './Testimonial.astro'
+---
+
+<section>
+  <div>
+    <div>
+      <h2>{t('testimonies.content.title')}</h2>
+      <p>{t('testimonies.content.paragraph')}</p>
+    </div>
+    <div>
+      <Testimonial
+        image='/images/Ellipse 10.png'
+        name={t('testimonies.content.items.0.person.1')}
+        role={t('testimonies.content.items.0.role.1')}
+        paragraph={t('testimonies.content.items.0.paragraph')}
+      />
+      <Testimonial
+        image='/images/Ellipse 12.png'
+        name={t('testimonies.content.items.1.person.2')}
+        role={t('testimonies.content.items.1.role.2')}
+        paragraph={t('testimonies.content.items.1.paragraph')}
+      />
+      <Testimonial
+        image='/images/Ellipse 11.png'
+        name={t('testimonies.content.items.2.person.3')}
+        role={t('testimonies.content.items.2.role.3')}
+        paragraph={t('testimonies.content.items.2.paragraph')}
+      />
+    </div>
+  </div>
+</section>
