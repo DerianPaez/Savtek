@@ -2,11 +2,21 @@
 import { t } from 'i18next'
 ---
 
-<section>
-  <div>
-    <span>{t('banner.content.legend')}</span>
-    <h1>{t('banner.content.title')}</h1>
-    <p>{t('banner.content.paragraph')}</p>
-    <a href=''>{t('banner.content.button')}</a>
+<section
+  class='h-screen flex items-center bg-cover bg-no-repeat bg-right bg-[url("/images/BackgroundHero.jpg")]'
+>
+  <div
+    class='px-[4%] mt-[85.27px] grid auto-rows-max gap-4 sm:w-3/4 lg:w-2/4 lg:pr-0 lg:mt-[117.91px]'
+  >
+    <img
+      class='w-[295px]'
+      src='/images/LogoSimplified.png'
+      alt={t('banner.content.legend')}
+    />
+    <h1 class='font-black text-4xl lg:text-6xl lg:leading-[73px]'>
+      {t('banner.content.title')}
+    </h1>
+    <p class='lg:text-lg lg:leading-8'>{t('banner.content.paragraph')}</p>
+    <a href='' class='text-lg underline w-max'>{t('banner.content.button')}</a>
   </div>
 </section>

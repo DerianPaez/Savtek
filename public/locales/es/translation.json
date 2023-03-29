@@ -45,12 +45,12 @@
       "paragraph": "SAVTEK Systems es una empresa especializada en servicios de instalación y mantenimiento de sistemas de seguridad. Fundada en 2016 por Saúl Ibarra, hemos estado brindando soluciones innovadoras y confiables a nuestros clientes durante los últimos 7 años.",
       "values": [
         {
-          "title.1": "Visión",
-          "paragraph.1": "Nos esforzamos por ser líderes en nuestro sector, impulsando el crecimiento y la innovación continua, mientras mantenemos nuestro compromiso con la excelencia y la satisfacción del cliente."
+          "title": "Visión",
+          "paragraph": "Nos esforzamos por ser líderes en nuestro sector, impulsando el crecimiento y la innovación continua, mientras mantenemos nuestro compromiso con la excelencia y la satisfacción del cliente."
         },
         {
-          "title.2": "Misión",
-          "paragraph.1": "Nuestra misión es proporcionar soluciones innovadoras y de alta calidad que superen las expectativas de nuestros clientes y mejoren su calidad de vida."
+          "title": "Misión",
+          "paragraph": "Nuestra misión es proporcionar soluciones innovadoras y de alta calidad que superen las expectativas de nuestros clientes y mejoren su calidad de vida."
         }
       ],
       "button": "Contáctanos"
@@ -163,11 +163,23 @@
     "content": [
       {
         "title.1": "Servicios",
-        "links": ["Instalación de cámaras ", "Voz/Datos", "Instalación de TV", "Iluminación", "Sistema de Audio"]
+        "links": [
+          "Instalación de cámaras ",
+          "Voz/Datos",
+          "Instalación de TV",
+          "Iluminación",
+          "Sistema de Audio"
+        ]
       },
       {
         "title.2": "Enlaces",
-        "links": ["Sobre Nosotros", "Servicios", "Portafolio", "Nuestros Clientes", "Contáctanos "]
+        "links": [
+          "Sobre Nosotros",
+          "Servicios",
+          "Portafolio",
+          "Nuestros Clientes",
+          "Contáctanos "
+        ]
       },
       {
         "title.3": "Legal",
