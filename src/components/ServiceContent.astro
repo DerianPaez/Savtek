@@ -1,0 +1,13 @@
+---
+import { t } from 'i18next'
+const { PrincipalImage, title, paragraph1, SecondaryImage1, SecondaryImage2, paragraph2, description } = Astro.props
+---
+
+<article>
+  <img src={PrincipalImage} alt={description} />
+  <h2>{title}</h2>
+  <p>{paragraph1}</p>
+  <img src={SecondaryImage1} alt={description} />
+  <img src={SecondaryImage2} alt={description} />
+  <p>{paragraph2}</p>
+</article>
