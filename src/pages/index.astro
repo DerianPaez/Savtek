@@ -10,6 +10,7 @@ import OurBrands from '../components/OurBrands.astro'
 import Testimonials from '../components/Testimonials.astro'
 import Advertising from '../components/Advertising.astro'
 import Portfolio from '../components/Portfolio.astro'
+import Button from '../components/Button.astro'
 
 changeLanguage('en')
 ---
@@ -32,7 +33,24 @@ changeLanguage('en')
       allowfullscreen=''
       loading='lazy'
       referrerpolicy='no-referrer-when-downgrade'></iframe>
+
+    <Button id='buttonSendGrid' name='Enviar' />
   </Wrapper>
 </Layout>
 
-<script></script>
+<script>
+  import sgMail from '@sendgrid/mail'
+  sgMail.setApiKey(
+    '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'
+  )
+  const button = document.getElementById('buttonSendGrid')
+  button.addEventListener('click', () => {
+    sgMail.send({
+      to: 'destinatario@example.com',
+      from: 'remitente@example.com',
+      subject: 'Asunto del correo electrónico',
+      text: 'Contenido del correo electrónico en texto plano',
+      html: '<p>Contenido del correo electrónico con formato HTML</p>'
+    })
+  })
+</script>
