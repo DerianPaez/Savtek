@@ -1,0 +1,51 @@
+---
+import { t } from 'i18next'
+import Value from './Value.astro'
+import Button from './Button.astro'
+---
+
+<section class=''>
+  <div
+    class='px-[4%] py-[100px] grid gap-8 lg:gap-14 md:grid-cols-2 items-center'
+  >
+    <div class='grid w-full h-full lg:min-h-[600px]'>
+      <img
+        class='w-full h-full object-cover'
+        src='https://definicion.de/wp-content/uploads/2013/03/perro-1.jpg'
+        alt=''
+      />
+      <!-- <img
+        class='col-span-2'
+        src='https://humanidades.com/wp-content/uploads/2017/02/perro-1-e1561678907722.jpg'
+        alt=''
+      />
+      <img
+        class='row-span-2 col-span-2'
+        src='https://images.hola.com/imagenes/mascotas/20221020219416/razas-perros-toy/1-154-385/razas-de-perro-toy-t.jpg'
+        alt=''
+      /> -->
+    </div>
+
+    <div class='grid gap-4'>
+      <h2 class='text-3xl font-bold lg:text-5xl text-white'>
+        {t('aboutus.content.title')}
+      </h2>
+      <p class='text-[#B5BCCB] leading-8'>{t('aboutus.content.paragraph')}</p>
+
+      <div class='grid gap-4 lg:grid-cols-2 items-start'>
+        <Value
+          number='1'
+          title={t('aboutus.content.values.0.title')}
+          paragraph={t('aboutus.content.values.0.paragraph')}
+        />
+        <Value
+          number='2'
+          title={t('aboutus.content.values.1.title')}
+          paragraph={t('aboutus.content.values.1.paragraph')}
+        />
+      </div>
+
+      <Button name={t('aboutus.content.button')} />
+    </div>
+  </div>
+</section>

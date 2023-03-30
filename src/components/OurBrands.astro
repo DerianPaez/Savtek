@@ -2,11 +2,19 @@
 import { t } from 'i18next'
 ---
 
-<section>
-  <div>
-    <div>
-      <h2>{t('ourbrands.content.title')}</h2>
-      <p>{t('ourbrands.content.paragraph')}</p>
+<section class='bg-[#0E1113]'>
+  <div
+    class='px-[4%] py-[100px] grid gap-8 md:grid-cols-2 lg:grid-cols-6 place-items-center'
+  >
+    <div class='grid gap-4 col-span-2'>
+      <h2
+        class='text-3xl font-bold lg:text-5xl text-white text-center lg:text-left'
+      >
+        {t('ourbrands.content.title')}
+      </h2>
+      <p class='text-[#B5BCCB] leading-8 text-center lg:text-left'>
+        {t('ourbrands.content.paragraph')}
+      </p>
     </div>
     <img src='/images/klipartz 7.png' alt='' />
     <img src='/images/Group 98.png' alt='' />
