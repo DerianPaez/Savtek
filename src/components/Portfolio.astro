@@ -1,0 +1,166 @@
+---
+import { t } from 'i18next'
+const portfolioObject = t('portfolio.content', { returnObjects: true })
+const portfolioList = Object.values(portfolioObject)
+---
+
+<section class='sm:h-screen grid grid-cols-1 sm:grid-cols-2 relative'>
+  <div
+    class='bg-gradient-to-b from-primary via-lightBlue to-secondary w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] absolute rounded-br-full opacity-20'
+  >
+  </div>
+  <div class='grid gap-3 px-[20px] py-10 lg:px-[10%]'>
+    <div class='flex gap-3 lg:gap-20 justify-center items-center'>
+      <div class='grid items-center gap-3 lg:gap-4'>
+        <h3
+          data-text={JSON.stringify(portfolioList)}
+          class='type text-xl lg:text-2xl font-semibold bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text'
+        >
+          {portfolioList[0].type}
+        </h3>
+        <h2 class='title text-3xl lg:text-5xl font-semibold'>
+          {portfolioList[0].title}
+        </h2>
+        <p class='paragraph text-gray lg:text-xl'>
+          {portfolioList[0].paragraph}
+        </p>
+
+        <div class='flex gap-1'>
+          <div
+            class='bg-gradient-to-b from-primary to-secondary w-[50px] h-[50px] rounded-full flex items-center justify-center'
+          >
+            <div class='swiper-button-next static m-0 w-5'>
+              <img src='/icons/b-arrow.svg' alt='' />
+            </div>
+          </div>
+          <div
+            class='bg-gradient-to-b from-primary to-secondary w-[50px] h-[50px] rounded-full flex items-center justify-center'
+          >
+            <div class='swiper-button-prev static m-0 w-5'>
+              <img src='/icons/t-arrow.svg' alt='' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='swiper-pagination static'></div>
+    </div>
+  </div>
+
+  <div class='swiper mySwiper w-full h-[300px] sm:h-auto'>
+    <div class='swiper-wrapper'>
+      <div class='swiper-slide'>
+        <img src='/images/carousel/project1.png' alt='' />
+      </div>
+      <div class='swiper-slide'>
+        <img src='/images/carousel/project2.png' alt='' />
+      </div>
+      <div class='swiper-slide'>
+        <img src='/images/carousel/project3.png' alt='' />
+      </div>
+      <div class='swiper-slide'>
+        <img src='/images/carousel/project4.png' alt='' />
+      </div>
+      <div class='swiper-slide'>
+        <img src='/images/carousel/project5.png' alt='' />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
+    --swiper-pagination-bullet-vertical-gap: 10px;
+    --swiper-pagination-color: linear-gradient(
+      180deg,
+      #00aaff 0%,
+      #137db3 100%,
+      #1181ba 100%
+    );
+    --swiper-pagination-bullet-inactive-color: linear-gradient(
+      180deg,
+      #00aaff 0%,
+      #137db3 100%,
+      #1181ba 100%
+    );
+    --swiper-pagination-bullet-inactive-opacity: 0.3;
+  }
+
+  @media (min-width: 720px) {
+    :root {
+      --swiper-pagination-bullet-width: 13px;
+      --swiper-pagination-bullet-height: 13px;
+      --swiper-pagination-bullet-vertical-gap: 15px;
+    }
+  }
+
+  .swiper-slide {
+    width: inherit;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .swiper-pagination {
+    transform: none !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    margin-top: 0px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: '';
+  }
+
+  .swiper,
+  .mySwiper {
+    margin: 0 !important;
+  }
+</style>
+
+<script>
+  import Portfolio from './Portfolio.astro'
+
+  let swiper = new Swiper('.mySwiper', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  })
+
+  swiper.on('slideChange', function () {
+    const activeSlide = swiper.realIndex
+    updateSlideContent(activeSlide)
+  })
+
+  function updateSlideContent(currentSlideIndex) {
+    const type = document.querySelector('.type')
+    const title = document.querySelector('.title')
+    const paragraph = document.querySelector('.paragraph')
+
+    const dataTextAttribute = type.getAttribute('data-text')
+    const translatesArray = JSON.parse(dataTextAttribute)
+
+    type.textContent = translatesArray[currentSlideIndex].type
+    title.textContent = translatesArray[currentSlideIndex].title
+    paragraph.textContent = translatesArray[currentSlideIndex].paragraph
+  }
+</script>

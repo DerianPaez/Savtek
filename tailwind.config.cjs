@@ -9,7 +9,8 @@ module.exports = {
       },
       gradientColorStops: {
         primary: '#00AAFF',
-        secondary: '#3C5A69'
+        lightBlue: '#137DB3',
+        secondary: '#1181BA'
       },
       gridTemplateColumns: {
         header: 'max-content max-content 1fr max-content max-content'

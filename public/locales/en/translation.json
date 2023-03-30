@@ -94,11 +94,33 @@
   },
 
   "portfolio": {
-    "content": {
-      "type": "Home",
-      "title": "TV Installation",
-      "paragraph": "In this project, we installed two televisions and a soundbar in a living room and a master bedroom. We used high-quality wall mounts to ensure optimal viewing and no cable clutter. We also configured the televisions to connect to media streaming devices."
-    }
+    "content": [
+      {
+        "type": "Home",
+        "title": "TV Installation",
+        "paragraph": "In this project, we installed two televisions and a soundbar in a living room and a master bedroom. We used high-quality wall mounts to ensure optimal viewing and no cable clutter. We also configured the televisions to connect to media streaming devices."
+      },
+      {
+        "type": "Home2",
+        "title": "Security Cameras",
+        "paragraph": "🎈In this project, we installed two televisions and a soundbar in a living room and a master bedroom. We used high-quality wall mounts to ensure optimal viewing and no cable clutter. We also configured the televisions to connect to media streaming devices."
+      },
+      {
+        "type": "Home3",
+        "title": "Voice/Data",
+        "paragraph": "🕶In this project, we installed two televisions and a soundbar in a living room and a master bedroom. We used high-quality wall mounts to ensure optimal viewing and no cable clutter. We also configured the televisions to connect to media streaming devices."
+      },
+      {
+        "type": "Home4",
+        "title": "Landscape Lighting",
+        "paragraph": "🥽In this project, we installed two televisions and a soundbar in a living room and a master bedroom. We used high-quality wall mounts to ensure optimal viewing and no cable clutter. We also configured the televisions to connect to media streaming devices."
+      },
+      {
+        "type": "Home5",
+        "title": "Audio System",
+        "paragraph": "🎨In this project, we installed two televisions and a soundbar in a living room and a master bedroom. We used high-quality wall mounts to ensure optimal viewing and no cable clutter. We also configured the televisions to connect to media streaming devices."
+      }
+    ]
   },
 
   "ourbrands": {

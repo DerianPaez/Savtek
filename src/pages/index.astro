@@ -1,24 +1,27 @@
 ---
-import { changeLanguage } from 'i18next'
-import Layout from '../layouts/Layout.astro'
-import Wrapper from '../components/Wrapper.astro'
-import Banner from '../components/Banner.astro'
-import Services from '../components/Services.astro'
-import OurBrands from '../components/OurBrands.astro'
-import Testimonials from '../components/Testimonials.astro'
-import Advertising from '../components/Advertising.astro'
-import Bar from '../components/Bar.astro'
-changeLanguage('en')
+import { changeLanguage } from "i18next";
+import Layout from "../layouts/Layout.astro";
+import Wrapper from "../components/Wrapper.astro";
+import Banner from "../components/Banner.astro";
+import Services from "../components/Services.astro";
+import OurBrands from "../components/OurBrands.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Advertising from "../components/Advertising.astro";
+import Bar from "../components/Bar.astro";
+import Portfolio from "../components/Portfolio.astro";
+
+changeLanguage("en");
 ---
 
 <Layout title='Welcome to Astro.'>
   <Wrapper>
-    <h1>Halo</h1>
     <Banner />
     <br /><br /><br /><br />
     <Bar />
     <br /><br /><br /><br />
     <Services />
+    <br /><br /><br /><br />
+    <Portfolio />
     <br /><br /><br /><br />
     <OurBrands />
     <br /><br /><br /><br />

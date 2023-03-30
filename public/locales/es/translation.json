@@ -94,11 +94,33 @@
   },
 
   "portfolio": {
-    "content": {
-      "type": "Casa",
-      "title": "Instalación de TV",
-      "paragraph": "En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
-    }
+    "content": [
+      {
+        "type": "Casa",
+        "title": "Instalación de TV",
+        "paragraph": "En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
+      },
+      {
+        "type": "Casa1",
+        "title": "Cámaras de Seguridad",
+        "paragraph": "🎈En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
+      },
+      {
+        "type": "Casa2",
+        "title": "Voz/Datos",
+        "paragraph": "🕶En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
+      },
+      {
+        "type": "Casa3",
+        "title": "Iluminación",
+        "paragraph": "🥽En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
+      },
+      {
+        "type": "Casa4",
+        "title": "Sistema de Sonido",
+        "paragraph": "🎨En este proyecto, instalamos dos televisores y la barra de sonido en una sala de estar y en una habitación principal. Utilizamos soportes de pared de alta calidad para asegurar una visualización óptima y sin desorden de cables. También configuramos los televisores para conectarse a dispositivos de transmisión de medios."
+      }
+    ]
   },
 
   "ourbrands": {
