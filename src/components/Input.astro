@@ -1,0 +1,26 @@
+---
+const { type, placeholder } = Astro.props
+---
+
+<input
+  class='bg-transparent px-1 py-2 w-full'
+  type={type}
+  placeholder={placeholder}
+  required
+/>
+
+<style>
+  [type='text'],
+  [type='email'],
+  [type='tel'] {
+    @apply border-0;
+  }
+
+  input::placeholder {
+    @apply text-gray;
+  }
+
+  input {
+    border-bottom: 1px solid #4f4f4f !important;
+  }
+</style>

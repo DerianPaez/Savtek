@@ -1,0 +1,90 @@
+---
+import { t } from 'i18next'
+import Input from './Input.astro'
+import Button from './Button.astro'
+import ContactInfo from './ContactInfo.astro'
+---
+
+<section class='grid gap-8 px-[4%] py-[100px] lg:gap-14'>
+  <h2 class='text-3xl font-bold lg:text-5xl text-white text-center'>
+    {t('contactUs.content.title')}
+  </h2>
+
+  <div class='grid gap-3 md:grid-cols-2 md:gap-4 lg:gap-16'>
+    <div class='grid gap-8'>
+      <div class='grid gap-4'>
+        <ContactInfo
+          icon='/icons/Contact-cellphone.svg'
+          desc={t('contactUs.content.phone')}
+        />
+        <ContactInfo
+          icon='/icons/Email.svg'
+          desc={t('contactUs.content.email')}
+        />
+        <ContactInfo
+          icon='/icons/Location.svg'
+          desc={t('contactUs.content.address')}
+        />
+      </div>
+
+      <div class='w-full h-[300px] bg-black opacity-75'>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.9314055709032!2d-80.10795458592852!3d26.20560237447277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9027045ffef2f%3A0x2b774474378b1a87!2s6278%20N%20Federal%20Hwy%20%23122%2C%20Fort%20Lauderdale%2C%20FL%2033308%2C%20EE.%20UU.!5e0!3m2!1ses!2sec!4v1680277938026!5m2!1ses!2sec'
+          width='100%'
+          height='100%'
+          style='border:0;'
+          allowfullscreen=''
+          loading='lazy'
+          referrerpolicy='no-referrer-when-downgrade'></iframe>
+      </div>
+    </div>
+
+    <form action='' class='grid gap-6'>
+      <Input
+        class='input'
+        type='text'
+        placeholder={t('contactUs.content.form.labels.name')}
+      />
+      <Input
+        type='email'
+        placeholder={t('contactUs.content.form.labels.email')}
+      />
+      <Input
+        type='tel'
+        placeholder={t('contactUs.content.form.labels.phone')}
+      />
+      <select name='services' class='text-gray bg-transparent'>
+        <option>{t('services.content.0.title')}</option>
+        <option value='Security Cameras'>{t('services.content.1.title')}</option
+        >
+        <option value='Voice/Data'>{t('services.content.2.title')}</option>
+        <option value='Landscape Lighting'
+          >{t('services.content.3.title')}</option
+        >
+        <option value='TV Installation'>{t('services.content.4.title')}</option>
+        <option value='Audio System'>{t('services.content.5.title')}</option>
+      </select>
+      <textarea
+        rows='4'
+        class='bg-transparent border border-gray'
+        placeholder={t('contactUs.content.form.labels.message')}></textarea>
+      <Button name={t('contactUs.content.form.button')} />
+    </form>
+  </div>
+</section>
+
+<style>
+  textarea,
+  select,
+  option {
+    border: none;
+    border-bottom: 1px solid #4f4f4f !important;
+    background-color: black;
+    padding: 8px 4px;
+    width: 100%;
+  }
+
+  textarea::placeholder {
+    @apply text-gray;
+  }
+</style>

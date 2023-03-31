@@ -162,7 +162,7 @@
     }
   },
 
-  "contactus": {
+  "contactUs": {
     "content": {
       "title": "Contact Us",
       "phone": "754-248-7978",
@@ -173,7 +173,6 @@
           "name": "Name",
           "email": "Email",
           "phone": "Phone",
-          "distributedsystems": "Distributed Systems ",
           "message": "Message"
         },
         "button": "Send"
