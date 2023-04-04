@@ -1,66 +1,74 @@
 ---
 import { t } from 'i18next'
+
+const footerLinkObject = t('footer.content', { returnObjects: true })
+const [serviceObject, aboutObject, legalObject] =
+  Object.values(footerLinkObject)
 ---
 
-<footer>
-  <div>
-    <img src='/images/Savtek.png' alt='' />
-    <div>
-      <h3>{t('footer.content.0.title.1')}</h3>
-      <ul>
-        <li>
-          <a href=''>Security Cameras</a>
-        </li>
-        <li>
-          <a href=''>Voice/Data</a>
-        </li>
-        <li>
-          <a href=''>TV Installation</a>
-        </li>
-        <li>
-          <a href=''>Landscape Lighting</a>
-        </li>
-        <li>
-          <a href=''>Audio System</a>
-        </li>
+<footer class='border-t-[1px] border-[#4f4f4f]'>
+  <div
+    class='px-[4%] py-[70px] grid gap-8 lg:gap-14 items-start justify-between md:auto-cols-max md:grid-flow-col'
+  >
+    <figure class='w-full'>
+      <img class='w-56 md:w-72 h-full' src='/images/Logo.png' alt='Logo' />
+    </figure>
+
+    <div class='grid gap-4'>
+      <h3 class='text-xl'>{serviceObject.title}</h3>
+      <ul class='grid gap-2'>
+        {
+          serviceObject.links.map((link: string) => (
+            <li class='text-[#A7ABB6]'>
+              <a href=''>{link}</a>
+            </li>
+          ))
+        }
       </ul>
     </div>
-    <div>
-      <h3>{t('footer.content.1.title.2')}</h3>
-      <ul>
-        <li>
-          <a href=''>About Us</a>
-        </li>
-        <li>
-          <a href=''>Servicios</a>
-        </li>
-        <li>
-          <a href=''>Portafolio</a>
-        </li>
-        <li>
-          <a href=''>Nuestros Clientes</a>
-        </li>
-        <li>
-          <a href=''>Contáctanos</a>
-        </li>
+
+    <div class='grid gap-4'>
+      <h3 class='text-xl'>{aboutObject.title}</h3>
+      <ul class='grid gap-2'>
+        {
+          aboutObject.links.map((link: string) => (
+            <li class='text-[#A7ABB6]'>
+              <a href=''>{link}</a>
+            </li>
+          ))
+        }
       </ul>
     </div>
-    <div>
-      <h3>{t('footer.content.2.title.3')}</h3>
-      <ul>
-        <li>
-          <a href=''>Terms of use</a>
-        </li>
-        <li>
-          <a href=''>Privacy Policy</a>
-        </li>
+
+    <div class='grid gap-4'>
+      <h3 class='text-xl'>{legalObject.title}</h3>
+      <ul class='grid gap-2'>
+        {
+          legalObject.links.map((link: string) => (
+            <li class='text-[#A7ABB6]'>
+              <a href=''>{link}</a>
+            </li>
+          ))
+        }
       </ul>
     </div>
-    <div>
-      <p>{t('footer.copyright')}</p>
-      <img src='/images/Vector 3.png' alt='' />
-      <img src='/images/Vector 4.png' alt='' />
-      <img src='/images/Vector 5.png' alt='' />
+  </div>
+  <div
+    class='bg-gradient-to-b from-primary via-lightBlue to-secondary px-[4%] py-4 grid gap-2 md:auto-cols-max md:grid-flow-col md:justify-between'
+  >
+    <p class='text-center'>{t('footer.copyright')}</p>
+    <div
+      class='grid auto-cols-max grid-flow-col gap-5 place-content-center place-items-center'
+    >
+      <a href=''>
+        <img src='/images/Vector 3.png' alt='' />
+      </a>
+      <a href=''>
+        <img src='/images/Vector 4.png' alt='' />
+      </a>
+      <a href=''>
+        <img src='/images/Vector 5.png' alt='' />
+      </a>
     </div>
   </div>
 </footer>
