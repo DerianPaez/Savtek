@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import Wrapper from "../../components/Wrapper.astro";
 import ServiceBanner from "../../components/ServiceBanner.astro";
 import ServiceContent from "../../components/ServiceContent.astro";
+import ServiceNabvar from "../../components/ServiceNabvar.astro";
 
 changeLanguage("es");
 ---
@@ -11,5 +12,28 @@ changeLanguage("es");
 <Layout>
   <Wrapper>
     <ServiceBanner title='Tv Installation' />
+    <div
+      class='px-[4%] py-[50px] lg:py-[100px] lg:grid lg:grid-cols-services gap-8'
+    >
+      <ServiceContent
+        id='services-dropdown'
+        principalImage='/images/principalimg.png'
+        title='Tv Installation'
+        paragraph1='Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.'
+        secondaryImage1='/images/secondaryImg1.png'
+        secondaryImage2='/images/secondaryImg2.png'
+        paragraph2='Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.'
+      />
+      <ServiceNabvar id='open-nabvar' />
+    </div>
   </Wrapper>
 </Layout>
+
+<script>
+  const servicesDropdown = document.getElementById('services-dropdown')
+  const openNabvar = document.getElementById('open-nabvar')
+
+  servicesDropdown.addEventListener('click', () => {
+    openNabvar.classList.toggle('active')
+  })
+</script>

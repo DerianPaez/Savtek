@@ -1,9 +1,11 @@
 ---
 import { t } from 'i18next'
 import Button from './Button.astro'
-const serviceObject = t('services.content', { returnObjects: true })
-const serviceList = Object.values(serviceObject)
+import { localizePath } from 'astro-i18next'
 const { className, id } = Astro.props
+
+const servicesObject = t('services.content', { returnObjects: true })
+const serviceList = Object.values(servicesObject)
 ---
 
 <div
@@ -13,47 +15,24 @@ const { className, id } = Astro.props
   <h3 class='text-white text-xl font-bold lg:text-2xl'>Servicios</h3>
   <nav>
     <ul class='grid gap-6 px-3'>
-      <li>
-        <a class='flex justify-between items-center' href=''
-          >Security Cameras
-          <img src='/icons/nabvarItem.svg' alt='' />
-        </a>
-      </li>
-      <li>
-        <a class='flex justify-between items-center' href=''
-          >Voice/Data
-          <img src='/icons/nabvarItem.svg' alt='' />
-        </a>
-      </li>
-      <li>
-        <a class='flex justify-between items-center' href=''
-          >Landscape Lighting
-          <img src='/icons/nabvarItem.svg' alt='' />
-        </a>
-      </li>
-      <li>
-        <a class='flex justify-between items-center' href=''
-          >TV Installation
-          <img src='/icons/nabvarItem.svg' alt='' />
-        </a>
-      </li>
-      <li>
-        <a class='flex justify-between items-center' href=''
-          >Audio System
-          <img src='/icons/nabvarItem.svg' alt='' />
-        </a>
-      </li>
-      <li>
-        <a class='flex justify-between items-center' href=''
-          >Service & Maintenance
-          <img src='/icons/nabvarItem.svg' alt='' />
-        </a>
-      </li>
+      {
+        serviceList.map((service) => (
+          <li>
+            <a
+              class='flex justify-between items-center'
+              href={localizePath(`/services${service.link}`)}
+            >
+              {service.title}
+              <img src='/icons/nabvarItem.svg' alt='' />
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
   <div class='w-full h-full grid place-items-center'>
-    <a href=''>
-      <Button name='Contact Us' />
+    <a href={localizePath('/#contact')}>
+      <Button name={t('services.contact')} />
     </a>
   </div>
 </div>

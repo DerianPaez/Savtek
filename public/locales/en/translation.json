@@ -76,6 +76,7 @@
     "content": [
       {
         "title": "Security Cameras",
+        "banner": "/images/servicesBanner.png",
         "paragraph": "We use advanced technology in the installation of security cameras to ensure you are always protected.",
         "imageMain": "/images/tv-installation.jpg",
         "paragraphMain": "Security cameras Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
@@ -86,6 +87,7 @@
       },
       {
         "title": "Voice/Data",
+        "banner": "",
         "paragraph": "We install voice and data systems to keep you connected, so you can work or enjoy your leisure time uninterrupted.",
         "imageMain": "/images/tv-installation.jpg",
         "paragraphMain": "Voice/Data Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
@@ -96,6 +98,7 @@
       },
       {
         "title": "Landscape Lighting",
+        "banner": "",
         "paragraph": "Create unique and special atmospheres with the right lighting for your garden or terrace.",
         "imageMain": "/images/tv-installation.jpg",
         "paragraphMain": "Landscape Lighting Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
@@ -106,6 +109,7 @@
       },
       {
         "title": "TV Installation",
+        "banner": "",
         "paragraph": "Enjoy the best audiovisual experience in your home or business with our television installations.",
         "imageMain": "/images/tv-installation.jpg",
         "paragraphMain": "TV Installation Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
@@ -116,6 +120,7 @@
       },
       {
         "title": "Audio System",
+        "banner": "",
         "paragraph": "We install high-end audio systems so you can listen to your favorite content with the best quality.",
         "imageMain": "/images/tv-installation.jpg",
         "paragraphMain": "Audio System Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
@@ -126,6 +131,7 @@
       },
       {
         "title": "Service & Maintenance",
+        "banner": "",
         "paragraph": "Professional equipment for secure and durable installations, maintaining systems in optimal condition.",
         "imageMain": "/images/tv-installation.jpg",
         "paragraphMain": "Service & Maintenance Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
@@ -135,7 +141,8 @@
         "link": "/maintenance-service"
       }
     ],
-    "button": "Read more"
+    "button": "Read more",
+    "contact": "Contact us"
   },
 
   "portfolio": {

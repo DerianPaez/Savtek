@@ -1,7 +1,10 @@
 ---
-import i18next, { changeLanguage, t } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Wrapper from "../../components/Wrapper.astro";
 import Layout from "../../layouts/Layout.astro";
+import ServiceBanner from "../../components/ServiceBanner.astro";
+import ServiceContent from "../../components/ServiceContent.astro";
+import ServiceNabvar from "../../components/ServiceNabvar.astro";
 
 changeLanguage("en");
 
@@ -10,7 +13,7 @@ export function getStaticPaths() {
         {
             service: "security-cameras",
             title: "services.content.0.title",
-            paragraph: "services.content.0.paragraph",
+            banner: "services.content.0.banner",
             imageMain: "services.content.0.imageMain",
             paragraphMain: "services.content.0.paragraphMain",
             imageSecondary1: "services.content.0.imageSecondary-1",
@@ -20,7 +23,7 @@ export function getStaticPaths() {
         {
             service: "voice-data",
             title: "services.content.1.title",
-            paragraph: "services.content.1.paragraph",
+            banner: "services.content.1.banner",
             imageMain: "services.content.1.imageMain",
             paragraphMain: "services.content.1.paragraphMain",
             imageSecondary1: "services.content.1.imageSecondary-1",
@@ -30,7 +33,7 @@ export function getStaticPaths() {
         {
             service: "landscape-lighting",
             title: "services.content.2.title",
-            paragraph: "services.content.2.paragraph",
+            banner: "services.content.2.banner",
             imageMain: "services.content.2.imageMain",
             paragraphMain: "services.content.2.paragraphMain",
             imageSecondary1: "services.content.2.imageSecondary-1",
@@ -40,7 +43,7 @@ export function getStaticPaths() {
         {
             service: "tv-installation",
             title: "services.content.3.title",
-            paragraph: "services.content.3.paragraph",
+            banner: "services.content.3.banner",
             imageMain: "services.content.3.imageMain",
             paragraphMain: "services.content.3.paragraphMain",
             imageSecondary1: "services.content.3.imageSecondary-1",
@@ -50,7 +53,7 @@ export function getStaticPaths() {
         {
             service: "audio-system",
             title: "services.content.4.title",
-            paragraph: "services.content.4.paragraph",
+            banner: "services.content.4.banner",
             imageMain: "services.content.4.imageMain",
             paragraphMain: "services.content.4.paragraphMain",
             imageSecondary1: "services.content.4.imageSecondary-1",
@@ -60,7 +63,7 @@ export function getStaticPaths() {
         {
             service: "maintenance-service",
             title: "services.content.5.title",
-            paragraph: "services.content.5.paragraph",
+            banner: "services.content.5.banner",
             imageMain: "services.content.5.imageMain",
             paragraphMain: "services.content.5.paragraphMain",
             imageSecondary1: "services.content.5.imageSecondary-1",
@@ -68,18 +71,49 @@ export function getStaticPaths() {
             paragraphSecondary: "services.content.5.paragraphSecondary"
         }
     ];
-    return pages.map(({ service, title }) => {
+    return pages.map(({ service, title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2, paragraphSecondary }) => {
         return {
             params: { service },
-            props: { title }
+            props: {
+                title,
+                banner,
+                imageMain,
+                paragraphMain,
+                imageSecondary1,
+                imageSecondary2,
+                paragraphSecondary
+            }
         };
     });
 }
-const { title } = Astro.props;
+const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2, paragraphSecondary } = Astro.props;
 ---
 
 <Layout>
   <Wrapper>
-    <h1>{t(title)}</h1>
+    <ServiceBanner image={t(banner)} title={t(title)} />
+    <div
+      class='px-[4%] py-[50px] lg:py-[100px] lg:grid lg:grid-cols-services gap-8'
+    >
+      <ServiceContent
+        id='services-dropdown'
+        title={t(title)}
+        principalImage={t(imageMain)}
+        paragraph1={t(paragraphMain)}
+        secondaryImage1={t(imageSecondary1)}
+        secondaryImage2={t(imageSecondary2)}
+        paragraph2={t(paragraphSecondary)}
+      />
+      <ServiceNabvar id='open-nabvar' />
+    </div>
   </Wrapper>
 </Layout>
+
+<script>
+  const servicesDropdown = document.getElementById('services-dropdown')
+  const openNabvar = document.getElementById('open-nabvar')
+
+  servicesDropdown.addEventListener('click', () => {
+    openNabvar.classList.toggle('active')
+  })
+</script>
