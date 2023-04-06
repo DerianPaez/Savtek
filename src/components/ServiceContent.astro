@@ -1,13 +1,33 @@
 ---
-import { t } from 'i18next'
-const { PrincipalImage, title, paragraph1, SecondaryImage1, SecondaryImage2, paragraph2, description } = Astro.props
+import Button from './Button.astro'
+import ServiceNabvar from './ServiceNabvar.astro'
+
+const {
+  id,
+  principalImage,
+  title,
+  paragraph1,
+  secondaryImage1,
+  secondaryImage2,
+  paragraph2,
+  description
+} = Astro.props
 ---
 
-<article>
-  <img src={PrincipalImage} alt={description} />
-  <h2>{title}</h2>
-  <p>{paragraph1}</p>
-  <img src={SecondaryImage1} alt={description} />
-  <img src={SecondaryImage2} alt={description} />
-  <p>{paragraph2}</p>
+<article class='grid grid-cols-1 gap-6'>
+  <div id={id} class='relative lg:hidden flex gap-2 items-center justify-end'>
+    <h3>Servicios</h3>
+    <img src='/icons/nabvarItemDown.svg' alt='' />
+    <ServiceNabvar id='open-nabvar' />
+  </div>
+  <img src={principalImage} alt={description && description} />
+  <h2 class='text-3xl font-bold lg:text-5xl text-white'>
+    {title}
+  </h2>
+  <p class='text-gray lg:text-xl leading-8'>{paragraph1}</p>
+  <div class='grid gap-6 md:grid-cols-2'>
+    <img src={secondaryImage1} alt={description && description} />
+    <img src={secondaryImage2} alt={description && description} />
+  </div>
+  <p class='text-gray lg:text-xl leading-8'>{paragraph2}</p>
 </article>

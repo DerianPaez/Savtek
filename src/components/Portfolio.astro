@@ -14,7 +14,7 @@ const portfolioList = Object.values(portfolioObject)
       <div class='grid items-center gap-3 lg:gap-4'>
         <h3
           data-text={JSON.stringify(portfolioList)}
-          class='type text-xl lg:text-2xl font-semibold bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text'
+          class='type text-xl lg:text-2xl font-semibold bg-gradient-to-b from-primary via-lightBlue to-secondary inline-block text-transparent bg-clip-text'
         >
           {portfolioList[0].type}
         </h3>
@@ -27,14 +27,14 @@ const portfolioList = Object.values(portfolioObject)
 
         <div class='flex gap-1'>
           <div
-            class='bg-gradient-to-b from-primary to-secondary w-[50px] h-[50px] rounded-full flex items-center justify-center'
+            class='bg-gradient-to-b from-primary via-lightBlue to-secondary w-[50px] h-[50px] rounded-full flex items-center justify-center'
           >
             <div class='swiper-button-next static m-0 w-5'>
               <img src='/icons/b-arrow.svg' alt='' />
             </div>
           </div>
           <div
-            class='bg-gradient-to-b from-primary to-secondary w-[50px] h-[50px] rounded-full flex items-center justify-center'
+            class='bg-gradient-to-b from-primary via-lightBlue to-secondary w-[50px] h-[50px] rounded-full flex items-center justify-center'
           >
             <div class='swiper-button-prev static m-0 w-5'>
               <img src='/icons/t-arrow.svg' alt='' />

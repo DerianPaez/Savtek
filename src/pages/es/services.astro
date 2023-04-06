@@ -1,0 +1,15 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Wrapper from "../../components/Wrapper.astro";
+import ServiceBanner from "../../components/ServiceBanner.astro";
+import ServiceContent from "../../components/ServiceContent.astro";
+
+changeLanguage("es");
+---
+
+<Layout>
+  <Wrapper>
+    <ServiceBanner title='Tv Installation' />
+  </Wrapper>
+</Layout>

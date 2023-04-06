@@ -1,13 +1,8 @@
 ---
-const { type, placeholder } = Astro.props
+const { ...props } = Astro.props
 ---
 
-<input
-  class='bg-transparent px-1 py-2 w-full'
-  type={type}
-  placeholder={placeholder}
-  required
-/>
+<input class='bg-transparent px-1 py-2 w-full' {...props} required />
 
 <style>
   [type='text'],

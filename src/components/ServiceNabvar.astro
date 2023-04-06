@@ -1,0 +1,65 @@
+---
+import { t } from 'i18next'
+import Button from './Button.astro'
+const serviceObject = t('services.content', { returnObjects: true })
+const serviceList = Object.values(serviceObject)
+const { className, id } = Astro.props
+---
+
+<div
+  id={id}
+  class={`${className} bg-black absolute lg:static lg:grid top-10 right-0  hidden gap-8 border-[1px] border-[#4f4f4f] w-[294.41px] h-[438px] lg:w-full lg:h-[500px] p-5`}
+>
+  <h3 class='text-white text-xl font-bold lg:text-2xl'>Servicios</h3>
+  <nav>
+    <ul class='grid gap-6 px-3'>
+      <li>
+        <a class='flex justify-between items-center' href=''
+          >Security Cameras
+          <img src='/icons/nabvarItem.svg' alt='' />
+        </a>
+      </li>
+      <li>
+        <a class='flex justify-between items-center' href=''
+          >Voice/Data
+          <img src='/icons/nabvarItem.svg' alt='' />
+        </a>
+      </li>
+      <li>
+        <a class='flex justify-between items-center' href=''
+          >Landscape Lighting
+          <img src='/icons/nabvarItem.svg' alt='' />
+        </a>
+      </li>
+      <li>
+        <a class='flex justify-between items-center' href=''
+          >TV Installation
+          <img src='/icons/nabvarItem.svg' alt='' />
+        </a>
+      </li>
+      <li>
+        <a class='flex justify-between items-center' href=''
+          >Audio System
+          <img src='/icons/nabvarItem.svg' alt='' />
+        </a>
+      </li>
+      <li>
+        <a class='flex justify-between items-center' href=''
+          >Service & Maintenance
+          <img src='/icons/nabvarItem.svg' alt='' />
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class='w-full h-full grid place-items-center'>
+    <a href=''>
+      <Button name='Contact Us' />
+    </a>
+  </div>
+</div>
+
+<style>
+  .active {
+    display: grid;
+  }
+</style>
