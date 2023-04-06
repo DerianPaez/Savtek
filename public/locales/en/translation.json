@@ -3,16 +3,26 @@
   "site.description": "Savtek System",
 
   "header": {
-    "menu": {
-      "home": "Home",
-      "aboutUs": "About us",
-      "services": "Services",
-      "portfolio": "Portfolio",
-      "testimonials": "Testimonials",
-      "gallery": "Gallery",
-      "contact": "Contact",
-      "button": "754-248-7978"
-    }
+    "menu": [
+      { "link": "Home" },
+      { "link": "About us" },
+      {
+        "link": "Services",
+        "submenu": [
+          { "link": "Security Cameras" },
+          { "link": "Voice/Data" },
+          { "link": "Landscape Lighting" },
+          { "link": "TV Installation" },
+          { "link": "Audio System" },
+          { "link": "Service & Maintenance" }
+        ]
+      },
+      { "link": "Portfolio" },
+      { "link": "Testimonials" },
+      { "link": "Gallery" },
+      { "link": "Contact" }
+    ],
+    "button": "754-248-7978"
   },
 
   "banner": {
@@ -26,16 +36,16 @@
 
   "bar": [
     {
-      "title.1": "Customized Solutions",
-      "paragraph.1": "We design a personalized security solution that fits your home or business."
+      "title": "Customized Solutions",
+      "paragraph": "We design a personalized security solution that fits your home or business."
     },
     {
-      "title.2": "Experience & Knowledge",
-      "paragraph.2": "With over 7 years of experience in the industry, we are experts in the installation and maintenance of security systems."
+      "title": "Experience & Knowledge",
+      "paragraph": "With over 7 years of experience in the industry, we are experts in the installation and maintenance of security systems."
     },
     {
-      "title.3": "Excellent Customer Service",
-      "paragraph.3": "We are committed to providing exceptional service from consultation to project completion."
+      "title": "Excellent Customer Service",
+      "paragraph": "We are committed to providing exceptional service from consultation to project completion."
     }
   ],
 
@@ -183,9 +193,9 @@
   "footer": {
     "content": [
       {
-        "title.1": "Servicios",
+        "title": "Servicios",
         "links": [
-          "Security Cameras ",
+          "Security Cameras",
           "Voice/Data",
           "TV Installation",
           "Landscape Lighting",
@@ -193,7 +203,7 @@
         ]
       },
       {
-        "title.2": "Company",
+        "title": "Company",
         "links": [
           "About Us",
           "Services",
@@ -203,7 +213,7 @@
         ]
       },
       {
-        "title.3": "Legal",
+        "title": "Legal",
         "links": ["Terms of use", "Privacy Policy"]
       }
     ],

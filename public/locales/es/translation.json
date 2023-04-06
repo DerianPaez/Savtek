@@ -3,16 +3,26 @@
   "site.description": "Savtek System",
 
   "header": {
-    "menu": {
-      "home": "Inicio",
-      "aboutUs": "Nosotros",
-      "services": "Servicios",
-      "portfolio": "Portafolio",
-      "testimonials": "Testimonios",
-      "gallery": "Galeria",
-      "contact": "Contacto",
-      "button": "754-248-7978"
-    }
+    "menu": [
+      { "link": "Inicio" },
+      { "link": "Nosotros" },
+      {
+        "link": "Servicios",
+        "submenu": [
+          { "link": "Cámaras de Seguridad" },
+          { "link": "Voz/Datos" },
+          { "link": "Iluminación" },
+          { "link": "Instalación de TV" },
+          { "link": "Sistema de Sonido" },
+          { "link": "Servicio de Mantenimiento" }
+        ]
+      },
+      { "link": "Portfolio" },
+      { "link": "Testimonios" },
+      { "link": "Galeria" },
+      { "link": "Contacto" }
+    ],
+    "button": "754-248-7978"
   },
 
   "banner": {
@@ -26,16 +36,16 @@
 
   "bar": [
     {
-      "title.1": "Soluciones Personalizadas",
-      "paragraph.1": "Diseñamos una solución de seguridad personalizada que se adapte a tu hogar o negocio."
+      "title": "Soluciones Personalizadas",
+      "paragraph": "Diseñamos una solución de seguridad personalizada que se adapte a tu hogar o negocio."
     },
     {
-      "title.2": "Experiencia & Conocimiento",
-      "paragraph.2": "Con más de 7 años de experiencia en la industria, somos expertos en instalación y mantenimiento de sistemas de seguridad."
+      "title": "Experiencia & Conocimiento",
+      "paragraph": "Con más de 7 años de experiencia en la industria, somos expertos en instalación y mantenimiento de sistemas de seguridad."
     },
     {
-      "title.3": "Excelente servicio al cliente",
-      "paragraph.3": "Hace falta"
+      "title": "Excelente servicio al cliente",
+      "paragraph": "Estamos comprometidos a brindar un servicio excepcional desde la consulta hasta la finalización del proyecto."
     }
   ],
 
@@ -61,34 +71,34 @@
     "title": "Servicios",
     "content": [
       {
-        "title.1": "Cámaras de Seguridad",
-        "paragraph.1": "Utilizamos tecnología avanzada en la instalación de cámaras de seguridad, para asegurarnos de que estés siempre protegido.",
-        "button.1": "Leer más"
+        "title": "Cámaras de Seguridad",
+        "paragraph": "Utilizamos tecnología avanzada en la instalación de cámaras de seguridad, para asegurarnos de que estés siempre protegido.",
+        "link": "Leer más"
       },
       {
-        "title.2": "Voz/Datos",
-        "paragraph.2": "Instalamos sistemas de voz y datos para que estés siempre conectado y puedas trabajar o disfrutar de tu ocio sin interrupciones.",
-        "button.2": "Leer más"
+        "title": "Voz/Datos",
+        "paragraph": "Instalamos sistemas de voz y datos para que estés siempre conectado y puedas trabajar o disfrutar de tu ocio sin interrupciones.",
+        "link": "Leer más"
       },
       {
-        "title.3": "Iluminación",
-        "paragraph.3": "Crea ambientes únicos y especiales con la iluminación adecuada para tu jardín o terraza.",
-        "button.3": "Leer más"
+        "title": "Iluminación",
+        "paragraph": "Crea ambientes únicos y especiales con la iluminación adecuada para tu jardín o terraza.",
+        "link": "Leer más"
       },
       {
-        "title.4": "Instalación de TV",
-        "paragraph.4": "Disfruta de la mejor experiencia audiovisual en tu hogar o negocio con nuestras instalaciones de televisores.",
-        "button.4": "Leer más"
+        "title": "Instalación de TV",
+        "paragraph": "Disfruta de la mejor experiencia audiovisual en tu hogar o negocio con nuestras instalaciones de televisores.",
+        "link": "Leer más"
       },
       {
-        "title.5": "Sistema de Sonido",
-        "paragraph.5": "Instalamos sistemas de audio de alta gama para que puedas escuchar tus contenidos favoritos con la mejor calidad.",
-        "button.5": "Leer más"
+        "title": "Sistema de Sonido",
+        "paragraph": "Instalamos sistemas de audio de alta gama para que puedas escuchar tus contenidos favoritos con la mejor calidad.",
+        "link": "Leer más"
       },
       {
-        "title.6": "Servicio de Mantenimiento",
-        "paragraph.6": "Equipo profesional para instalaciones seguras y duraderas, manteniendo sistemas en óptimo estado.",
-        "button.6": "Leer más"
+        "title": "Servicio de Mantenimiento",
+        "paragraph": "Equipo profesional para instalaciones seguras y duraderas, manteniendo sistemas en óptimo estado.",
+        "link": "Leer más"
       }
     ]
   },
