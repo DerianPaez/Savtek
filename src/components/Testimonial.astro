@@ -1,11 +1,29 @@
 ---
-import { t } from 'i18next'
 const { image, name, role, paragraph } = Astro.props
 ---
 
-<article>
-  <img src={image} alt={name} />
-  <h3>{name}</h3>
-  <p>{role}</p>
-  <p>{paragraph}</p>
+<article class='grid gap-3 p-[24px]'>
+  <div class='flex gap-2 items-center'>
+    <img
+      class='w-[50px] h-[50px] lg:w-[84px] lg:h-[84px] rounded-full'
+      src={image}
+      alt={name}
+    />
+    <div class=''>
+      <h3 class='text-2xl font-semibold'>{name}</h3>
+      <p
+        class='font-medium bg-gradient-to-b from-primary via-lightBlue to-secondary inline-block text-transparent bg-clip-text'
+      >
+        {role}
+      </p>
+    </div>
+  </div>
+  <p class='paragraph text-gray leading-7 font-medium'>{paragraph}</p>
+  <div class='mt-5 w-max place-self-end grid grid-cols-5 gap-[5px]'>
+    <img src='/icons/StarFill.svg' />
+    <img src='/icons/StarFill.svg' />
+    <img src='/icons/StarFill.svg' />
+    <img src='/icons/StarFill.svg' />
+    <img src='/icons/StarFill.svg' />
+  </div>
 </article>

@@ -5,6 +5,8 @@ import { t } from 'i18next'
 const { id, className } = Astro.props
 const menuObject = t('header.menu', { returnObjects: true })
 const menuList = Object.values(menuObject)
+
+import { localizePath } from 'astro-i18next'
 ---
 
 <nav id={id} class={className}>
@@ -28,7 +30,9 @@ const menuList = Object.values(menuObject)
       </svg>
     </div>
 
-    <ul class='flex flex-col gap-4 justify-center items-center lg:flex-row'>
+    <ul
+      class='flex flex-col gap-4 justify-center items-center lg:flex-row xl:gap-6'
+    >
       {
         menuList.map((item, index) => {
           if (item.submenu) {
@@ -36,7 +40,7 @@ const menuList = Object.values(menuObject)
               <button
                 id={`dropdownDefaultButton-${index}`}
                 data-dropdown-toggle={`dropdown-${index}`}
-                class='text-white flex items-center hover:text-gray'
+                class='text-white xl:text-lg flex items-center hover:text-gray'
               >
                 {item.link}
                 <svg
@@ -65,7 +69,10 @@ const menuList = Object.values(menuObject)
                     {item.submenu.map((subItem) => {
                       return (
                         <li class='item-close-menu'>
-                          <a href='#' class='block px-4 py-2 hover:text-gray'>
+                          <a
+                            href={localizePath(`${item.href}${subItem.href}`)}
+                            class='block xl:text-lg px-4 py-2 hover:text-gray'
+                          >
                             {subItem.link}
                           </a>
                         </li>
@@ -79,8 +86,8 @@ const menuList = Object.values(menuObject)
 
           return (
             <NavItem
-              className='item-close-menu'
-              href={`/${t('header.menu.services')}/${item}`}
+              className='item-close-menu xl:text-lg'
+              to={localizePath(item.href)}
             >
               {item.link}
             </NavItem>
@@ -89,7 +96,7 @@ const menuList = Object.values(menuObject)
       }
     </ul>
     <div class='absolute bottom-6 lg:hidden item-close-menu'>
-      <Button icon='./icons/Cellphone1.svg' name={t('header.menu.button')} />
+      <Button icon='/icons/Cellphone1.svg' name={t('header.menu.button')} />
     </div>
   </div>
 </nav>
@@ -99,7 +106,7 @@ const menuList = Object.values(menuObject)
   const itemCloseMenu = document.querySelectorAll('.item-close-menu')
   const menu = document.getElementById('menu')
 
-  closeMenu.addEventListener('click', () => {
+  closeMenu?.addEventListener('click', () => {
     menu.classList.replace('flex', 'hidden')
   })
 

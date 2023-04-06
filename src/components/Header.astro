@@ -6,6 +6,8 @@ import i18next from 'i18next'
 import EsIcon from './EsIcon.astro'
 import EnIcon from './EnIcon.astro'
 
+import { localizePath } from 'astro-i18next'
+const { pathname } = Astro.url
 const currentLanguage = i18next.language
 ---
 
@@ -39,7 +41,7 @@ const currentLanguage = i18next.language
   </div>
   <Navbar id='menu' className='z-[1000] hidden lg:flex' />
   <a href='tel:+17542487978' class='hidden lg:block lg:mr-2 xl:mr-4'>
-    <Button icon='./icons/Cellphone1.svg' name='754-248-7978' />
+    <Button icon='/icons/Cellphone1.svg' name='754-248-7978' />
   </a>
 
   <button
@@ -75,11 +77,11 @@ const currentLanguage = i18next.language
       >
         {
           currentLanguage === 'en' ? (
-            <a href='/es'>
+            <a href={localizePath(pathname, 'es')}>
               <EsIcon />
             </a>
           ) : (
-            <a href='/'>
+            <a href={localizePath(pathname, 'en')}>
               <EnIcon />
             </a>
           )
@@ -93,7 +95,7 @@ const currentLanguage = i18next.language
   const openMenu = document.getElementById('open-menu')
   const menu = document.getElementById('menu')
 
-  openMenu.addEventListener('click', () => {
+  openMenu?.addEventListener('click', () => {
     menu.classList.replace('hidden', 'flex')
   })
 </script>

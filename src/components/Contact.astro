@@ -3,9 +3,14 @@ import { t } from 'i18next'
 import Input from './Input.astro'
 import Button from './Button.astro'
 import ContactInfo from './ContactInfo.astro'
+
+const menuObject = t('header.menu', { returnObjects: true })
+const menuList = Object.values(menuObject)
+
+const contactUsHref = menuList[6].href.replace('/#', '')
 ---
 
-<section class='grid gap-8 px-[4%] py-[100px] lg:gap-14'>
+<section id={contactUsHref} class='grid gap-8 px-[4%] py-[100px] lg:gap-14'>
   <h2 class='text-3xl font-bold lg:text-5xl text-white text-center'>
     {t('contactUs.content.title')}
   </h2>

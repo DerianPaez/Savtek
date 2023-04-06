@@ -1,33 +1,41 @@
 ---
 import { t } from 'i18next'
 import Testimonial from './Testimonial.astro'
+
+const testimonialObject = t('testimonies.content.items', {
+  returnObjects: true
+})
+const testimonialList = Object.values(testimonialObject)
+
+const menuObject = t('header.menu', { returnObjects: true })
+const menuList = Object.values(menuObject)
+
+const testimonialsUsHref = menuList[5].href.replace('/#', '')
 ---
 
-<section>
-  <div>
-    <div>
-      <h2>{t('testimonies.content.title')}</h2>
-      <p>{t('testimonies.content.paragraph')}</p>
+<section id={testimonialsUsHref}>
+  <div class='px-[4%] py-[100px] grid gap-4 lg:gap-8 items-center'>
+    <div class='w-full md:w-3/6 grid gap-5 place-self-center'>
+      <h2 class='text-3xl font-bold lg:text-5xl text-white text-center'>
+        {t('testimonies.content.title')}
+      </h2>
+      <p class='paragraph text-gray leading-8 text-center'>
+        {t('testimonies.content.paragraph')}
+      </p>
     </div>
-    <div>
-      <Testimonial
-        image='/images/Ellipse 10.png'
-        name={t('testimonies.content.items.0.person.1')}
-        role={t('testimonies.content.items.0.role.1')}
-        paragraph={t('testimonies.content.items.0.paragraph')}
-      />
-      <Testimonial
-        image='/images/Ellipse 12.png'
-        name={t('testimonies.content.items.1.person.2')}
-        role={t('testimonies.content.items.1.role.2')}
-        paragraph={t('testimonies.content.items.1.paragraph')}
-      />
-      <Testimonial
-        image='/images/Ellipse 11.png'
-        name={t('testimonies.content.items.2.person.3')}
-        role={t('testimonies.content.items.2.role.3')}
-        paragraph={t('testimonies.content.items.2.paragraph')}
-      />
+    <div class='grid gap-8 md:grid-cols-3'>
+      {
+        testimonialList.map((item, index) => {
+          return (
+            <Testimonial
+              image={`/images/testimonial-${index + 1}.png`}
+              name={item.person}
+              role={item.role}
+              paragraph={item.paragraph}
+            />
+          )
+        })
+      }
     </div>
   </div>
 </section>

@@ -1,0 +1,85 @@
+---
+import i18next, { changeLanguage, t } from "i18next";
+import Wrapper from "../../../components/Wrapper.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+changeLanguage("es");
+
+export function getStaticPaths() {
+    const pages = [
+        {
+            service: "security-cameras",
+            title: "services.content.0.title",
+            paragraph: "services.content.0.paragraph",
+            imageMain: "services.content.0.imageMain",
+            paragraphMain: "services.content.0.paragraphMain",
+            imageSecondary1: "services.content.0.imageSecondary-1",
+            imageSecondary2: "services.content.0.imageSecondary-2",
+            paragraphSecondary: "services.content.0.paragraphSecondary"
+        },
+        {
+            service: "voice-data",
+            title: "services.content.1.title",
+            paragraph: "services.content.1.paragraph",
+            imageMain: "services.content.1.imageMain",
+            paragraphMain: "services.content.1.paragraphMain",
+            imageSecondary1: "services.content.1.imageSecondary-1",
+            imageSecondary2: "services.content.1.imageSecondary-2",
+            paragraphSecondary: "services.content.1.paragraphSecondary"
+        },
+        {
+            service: "landscape-lighting",
+            title: "services.content.2.title",
+            paragraph: "services.content.2.paragraph",
+            imageMain: "services.content.2.imageMain",
+            paragraphMain: "services.content.2.paragraphMain",
+            imageSecondary1: "services.content.2.imageSecondary-1",
+            imageSecondary2: "services.content.2.imageSecondary-2",
+            paragraphSecondary: "services.content.2.paragraphSecondary"
+        },
+        {
+            service: "tv-installation",
+            title: "services.content.3.title",
+            paragraph: "services.content.3.paragraph",
+            imageMain: "services.content.3.imageMain",
+            paragraphMain: "services.content.3.paragraphMain",
+            imageSecondary1: "services.content.3.imageSecondary-1",
+            imageSecondary2: "services.content.3.imageSecondary-2",
+            paragraphSecondary: "services.content.3.paragraphSecondary"
+        },
+        {
+            service: "audio-system",
+            title: "services.content.4.title",
+            paragraph: "services.content.4.paragraph",
+            imageMain: "services.content.4.imageMain",
+            paragraphMain: "services.content.4.paragraphMain",
+            imageSecondary1: "services.content.4.imageSecondary-1",
+            imageSecondary2: "services.content.4.imageSecondary-2",
+            paragraphSecondary: "services.content.4.paragraphSecondary"
+        },
+        {
+            service: "maintenance-service",
+            title: "services.content.5.title",
+            paragraph: "services.content.5.paragraph",
+            imageMain: "services.content.5.imageMain",
+            paragraphMain: "services.content.5.paragraphMain",
+            imageSecondary1: "services.content.5.imageSecondary-1",
+            imageSecondary2: "services.content.5.imageSecondary-2",
+            paragraphSecondary: "services.content.5.paragraphSecondary"
+        }
+    ];
+    return pages.map(({ service, title }) => {
+        return {
+            params: { service },
+            props: { title }
+        };
+    });
+}
+const { title } = Astro.props;
+---
+
+<Layout>
+  <Wrapper>
+    <h1>{t(title)}</h1>
+  </Wrapper>
+</Layout>

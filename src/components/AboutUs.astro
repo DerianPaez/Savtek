@@ -2,9 +2,13 @@
 import { t } from 'i18next'
 import Value from './Value.astro'
 import Button from './Button.astro'
+
+const menuObject = t('header.menu', { returnObjects: true })
+const menuList = Object.values(menuObject)
+const aboutUsHref = menuList[1].href.replace('/#', '')
 ---
 
-<section class=''>
+<section id={aboutUsHref} class=''>
   <div
     class='px-[4%] py-[100px] grid gap-8 lg:gap-14 md:grid-cols-2 items-center'
   >

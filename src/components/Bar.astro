@@ -1,12 +1,29 @@
 ---
 import { t } from 'i18next'
 import BarItem from './BarItem.astro'
+const barObject = t('bar', { returnObjects: true })
+const barList = Object.values(barObject)
 ---
 
-<section>
-  <div>
-    <BarItem image='/images/Vector.png' title={t('bar.0.title.1')} paragraph={t('bar.0.paragraph.1')} />
-    <BarItem image='/images/Vector 2.png' title={t('bar.1.title.2')} paragraph={t('bar.1.paragraph.2')} />
-    <BarItem image='/images/Vector 1.png' title={t('bar.2.title.3')} paragraph={t('bar.2.paragraph.3')} />
+<section
+  class='relative z-40 w-full px-[6%] pb-[100px] -my-[120px] lg:px-[10%]'
+>
+  <div
+    class='w-full grid gap-8 bg-blue py-9 px-10 md:grid-cols-none md:grid-flow-col md:items-start md:gap-6'
+  >
+    {
+      barList.map((barItem, index) => {
+        const lastItem = index === barList.length - 1
+        return (
+          <BarItem
+            key={barItem.title}
+            title={barItem.title}
+            paragraph={barItem.paragraph}
+            isLastest={!lastItem}
+            image={`/icons/bar-item-${index + 1}.svg`}
+          />
+        )
+      })
+    }
   </div>
 </section>

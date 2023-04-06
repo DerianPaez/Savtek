@@ -2,6 +2,11 @@
 import { t } from 'i18next'
 const portfolioObject = t('portfolio.content', { returnObjects: true })
 const portfolioList = Object.values(portfolioObject)
+
+const menuObject = t('header.menu', { returnObjects: true })
+const menuList = Object.values(menuObject)
+
+const portfolioUsHref = menuList[3].href.replace('/#', '')
 ---
 
 <section
