@@ -10,7 +10,10 @@ const menuList = Object.values(menuObject)
 const contactUsId = menuList[6].href.replace('/#', '')
 ---
 
-<section id={contactUsId} class='grid gap-8 px-[4%] py-[100px] lg:gap-14'>
+<section
+  id={contactUsId}
+  class='grid gap-8 px-[4%] py-[50px] lg:py-[100px] lg:gap-14'
+>
   <h2 class='text-3xl font-bold lg:text-5xl text-white text-center'>
     {t('contactUs.content.title')}
   </h2>
