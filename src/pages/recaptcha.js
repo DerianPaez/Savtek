@@ -3,7 +3,7 @@ export async function post({ request }) {
 
   const recaptchaURL = 'https://www.google.com/recaptcha/api/siteverify'
   const requestBody = {
-    secret: '6Ld4zEYlAAAAALipx7cckd6dM74UdTBwWiwEw1hq',
+    secret: '6Ld4zEYlAAAAALBmPdtTVtgLbgvoSBp2ujtzjfnu',
     response: data.recaptcha
   }
 
