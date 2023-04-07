@@ -10,10 +10,10 @@ const testimonialList = Object.values(testimonialObject)
 const menuObject = t('header.menu', { returnObjects: true })
 const menuList = Object.values(menuObject)
 
-const testimonialsUsHref = menuList[5].href.replace('/#', '')
+const testimonialsUsId = menuList[5].href.replace('/#', '')
 ---
 
-<section id={testimonialsUsHref}>
+<section id={testimonialsUsId}>
   <div class='px-[4%] py-[100px] grid gap-4 lg:gap-8 items-center'>
     <div class='w-full md:w-3/6 grid gap-5 place-self-center'>
       <h2 class='text-3xl font-bold lg:text-5xl text-white text-center'>

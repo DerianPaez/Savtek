@@ -40,7 +40,7 @@ import { localizePath } from 'astro-i18next'
               <button
                 id={`dropdownDefaultButton-${index}`}
                 data-dropdown-toggle={`dropdown-${index}`}
-                class='text-white xl:text-lg flex items-center hover:text-gray'
+                class='text-white xl:text-lg flex items-center hover:text-primary'
               >
                 {item.link}
                 <svg
@@ -71,7 +71,7 @@ import { localizePath } from 'astro-i18next'
                         <li class='item-close-menu'>
                           <a
                             href={localizePath(`${item.href}${subItem.href}`)}
-                            class='block xl:text-lg px-4 py-2 hover:text-gray'
+                            class='block xl:text-lg px-4 py-2 hover:text-primary'
                           >
                             {subItem.link}
                           </a>
