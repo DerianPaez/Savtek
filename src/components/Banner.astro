@@ -4,12 +4,14 @@ import { t } from 'i18next'
 
 <section
   id='banner-id'
-  class='relative z-40 h-screen flex items-center bg-cover bg-no-repeat bg-right bg-[url("/images/BackgroundHero.jpg")]'
+  class='relative z-40 min-h-[700px] h-screen flex items-center bg-cover bg-no-repeat bg-right bg-[url("/images/background-hero.jpg")]'
 >
-  <div class='px-[4%] grid auto-rows-max gap-4 sm:w-3/4 lg:w-2/4 lg:pr-0'>
+  <div
+    class='px-[4%] grid auto-rows-max gap-4 sm:w-3/4 md:mt-[83.45px] lg:mt-[115.18px] xl:mt-[135.18px] lg:w-2/4 lg:pr-0'
+  >
     <img
       class='w-[295px]'
-      src='/images/LogoSimplified.png'
+      src='/images/logo-simplified.png'
       alt={t('banner.content.legend')}
     />
     <h1 class='font-black text-4xl lg:text-6xl lg:leading-[73px]'>

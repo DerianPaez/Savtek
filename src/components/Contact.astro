@@ -22,15 +22,15 @@ const contactUsId = menuList[6].href.replace('/#', '')
     <div class='grid gap-8'>
       <div class='grid gap-4'>
         <ContactInfo
-          icon='/icons/Contact-cellphone.svg'
+          icon='/icons/contact-cellphone.svg'
           desc={t('contactUs.content.phone')}
         />
         <ContactInfo
-          icon='/icons/Email.svg'
+          icon='/icons/email.svg'
           desc={t('contactUs.content.email')}
         />
         <ContactInfo
-          icon='/icons/Location.svg'
+          icon='/icons/location.svg'
           desc={t('contactUs.content.address')}
         />
       </div>
@@ -90,7 +90,7 @@ const contactUsId = menuList[6].href.replace('/#', '')
       <Button type='submit' name={t('contactUs.content.form.button')} />
 
       <input type='hidden' name='_next' value='http://localhost:3000' />
-      <input type='hidden' name='_captcha' value='false' />
+      <!-- <input type='hidden' name='_captcha' value='false' /> -->
     </form>
   </div>
 </section>

@@ -17,7 +17,7 @@ const serviceList = Object.values(servicesObject)
     <ul class='grid gap-6 px-3'>
       {
         serviceList.map((service) => (
-          <li class='navbar-item group  '>
+          <li class='navbar-item group'>
             <a
               class='flex justify-between items-center group-hover:text-primary'
               href={localizePath(`/services${service.link}`)}

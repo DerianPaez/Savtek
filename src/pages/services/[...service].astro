@@ -91,7 +91,7 @@ const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary
 
 <Layout>
   <Wrapper>
-    <ServiceBanner image={t(banner)} title={t(title)} />
+    <ServiceBanner className={`bg-[url("${t(banner)}")]`} title={t(title)} />
     <div
       class='px-[4%] py-[50px] lg:py-[100px] lg:grid lg:grid-cols-services gap-8'
     >
