@@ -1,9 +1,12 @@
 ---
 import { t } from 'i18next'
-
+import { localizePath } from 'astro-i18next'
 const footerLinkObject = t('footer.content', { returnObjects: true })
 const [serviceObject, aboutObject, legalObject] =
   Object.values(footerLinkObject)
+
+const menuObject = t('header.menu', { returnObjects: true })
+const menuList = Object.values(menuObject)
 ---
 
 <footer class='border-t-[1px] border-[#4f4f4f]'>
@@ -18,9 +21,9 @@ const [serviceObject, aboutObject, legalObject] =
       <h3 class='text-xl'>{serviceObject.title}</h3>
       <ul class='grid gap-2'>
         {
-          serviceObject.links.map((link: string) => (
+          serviceObject.links.map((item) => (
             <li class='text-[#A7ABB6]'>
-              <a href=''>{link}</a>
+              <a href={localizePath(item.href)}>{item.label}</a>
             </li>
           ))
         }
@@ -31,9 +34,9 @@ const [serviceObject, aboutObject, legalObject] =
       <h3 class='text-xl'>{aboutObject.title}</h3>
       <ul class='grid gap-2'>
         {
-          aboutObject.links.map((link: string) => (
+          aboutObject.links.map((item) => (
             <li class='text-[#A7ABB6]'>
-              <a href=''>{link}</a>
+              <a href={localizePath(item.href)}>{item.label}</a>
             </li>
           ))
         }
@@ -44,9 +47,9 @@ const [serviceObject, aboutObject, legalObject] =
       <h3 class='text-xl'>{legalObject.title}</h3>
       <ul class='grid gap-2'>
         {
-          legalObject.links.map((link: string) => (
+          legalObject.links.map((item) => (
             <li class='text-[#A7ABB6]'>
-              <a href=''>{link}</a>
+              <a href={localizePath(item.href)}>{item.label}</a>
             </li>
           ))
         }

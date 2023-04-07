@@ -21,7 +21,7 @@
           }
         ]
       },
-      { "link": "Portfolio", "href": "/#portfolio" },
+      { "link": "Portafolio", "href": "/#portfolio" },
       { "link": "Galeria", "href": "/gallery" },
       { "link": "Testimonios", "href": "/#testimonials" },
       { "link": "Contacto", "href": "/#contact" }
@@ -236,28 +236,43 @@
   "footer": {
     "content": [
       {
-        "title.1": "Servicios",
+        "title": "Servicios",
         "links": [
-          "Instalación de cámaras ",
-          "Voz/Datos",
-          "Instalación de TV",
-          "Iluminación",
-          "Sistema de Audio"
+          {
+            "label": "Cámaras de seguridad",
+            "href": "/services/security-cameras"
+          },
+          { "label": "Voz/Datos", "href": "/services/voice-data" },
+          {
+            "label": "Instalación de TV",
+            "href": "/services/tv-installation"
+          },
+          {
+            "label": "Iluminación",
+            "href": "/services/landscape-lighting"
+          },
+          { "label": "Sistema de audio", "href": "/services/audio-system" },
+          {
+            "label": "Servicio de mantenimiento",
+            "href": "/services/maintenance-service"
+          }
         ]
       },
       {
-        "title.2": "Enlaces",
+        "title": "Company",
         "links": [
-          "Sobre Nosotros",
-          "Servicios",
-          "Portafolio",
-          "Nuestros Clientes",
-          "Contáctanos "
+          { "label": "Sobre Nosotros", "href": "/#about-us" },
+          { "label": "Portafolio", "href": "/#portfolio" },
+          { "label": "Galería", "href": "/gallery" },
+          { "label": "Contáctanos", "href": "/#contact" }
         ]
       },
       {
-        "title.3": "Legal",
-        "links": ["Términos de condiciones", "Política de privacidad"]
+        "title": "Legal",
+        "links": [
+          { "label": "Términos de condiciones", "href": "/terms-of-use" },
+          { "label": "Política de privacidad", "href": "/privacy-policy" }
+        ]
       }
     ],
     "copyright": "Copyright © 2023 Savtek Systems | All rights reserved"

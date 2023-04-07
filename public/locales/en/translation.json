@@ -235,28 +235,37 @@
   "footer": {
     "content": [
       {
-        "title": "Servicios",
+        "title": "Services",
         "links": [
-          "Security Cameras",
-          "Voice/Data",
-          "TV Installation",
-          "Landscape Lighting",
-          "Audio System"
+          { "label": "Security Cameras", "href": "/services/security-cameras" },
+          { "label": "Voice/Data", "href": "/services/voice-data" },
+          { "label": "TV Installation", "href": "/services/tv-installation" },
+          {
+            "label": "Landscape Lighting",
+            "href": "/services/landscape-lighting"
+          },
+          { "label": "Audio System", "href": "/services/audio-system" },
+          {
+            "label": "Service & Maintenance",
+            "href": "/services/maintenance-service"
+          }
         ]
       },
       {
         "title": "Company",
         "links": [
-          "About Us",
-          "Services",
-          "Portfolio",
-          "Our clients",
-          "Contact us"
+          { "label": "About Us", "href": "/#about-us" },
+          { "label": "Portfolio", "href": "/#portfolio" },
+          { "label": "Gallery", "href": "/gallery" },
+          { "label": "Contact us", "href": "/#contact" }
         ]
       },
       {
         "title": "Legal",
-        "links": ["Terms of use", "Privacy Policy"]
+        "links": [
+          { "label": "Terms of use", "href": "/terms-of-use" },
+          { "label": "Privacy Policy", "href": "/privacy-policy" }
+        ]
       }
     ],
     "copyright": "Copyright © 2023 Savtek Systems | All rights reserved"

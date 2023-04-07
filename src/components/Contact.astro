@@ -7,10 +7,10 @@ import ContactInfo from './ContactInfo.astro'
 const menuObject = t('header.menu', { returnObjects: true })
 const menuList = Object.values(menuObject)
 
-const contactUsHref = menuList[6].href.replace('/#', '')
+const contactUsId = menuList[6].href.replace('/#', '')
 ---
 
-<section id={contactUsHref} class='grid gap-8 px-[4%] py-[100px] lg:gap-14'>
+<section id={contactUsId} class='grid gap-8 px-[4%] py-[100px] lg:gap-14'>
   <h2 class='text-3xl font-bold lg:text-5xl text-white text-center'>
     {t('contactUs.content.title')}
   </h2>
@@ -45,6 +45,7 @@ const contactUsHref = menuList[6].href.replace('/#', '')
     </div>
 
     <form
+      id='contact-form'
       action='https://formsubmit.co/0e8e6e30fa3186466df710e9b6400fea'
       method='POST'
       class='grid gap-6'
@@ -83,7 +84,32 @@ const contactUsHref = menuList[6].href.replace('/#', '')
         class='bg-transparent border border-gray'
         name='message'
         placeholder={t('contactUs.content.form.labels.message')}></textarea>
-      <Button type='submit' name={t('contactUs.content.form.button')} />
+      <Button
+        id='button-submit'
+        class='g-recaptcha'
+        data-sitekey='6Ld4zEYlAAAAALipx7cckd6dM74UdTBwWiwEw1hq'
+        data-callback='onSubmit'
+        data-action='submit'
+        type='submit'
+        name={t('contactUs.content.form.button')}
+      />
+
+      <script is:inline>
+        function onSubmit(token) {
+          fetch('/recaptcha', {
+            method: 'POST',
+            body: JSON.stringify({ recaptcha: token })
+          })
+            .then((response) => response.json())
+            .then((gResponse) => {
+              if (gResponse.success) {
+                console.log('success')
+              } else {
+                console.log('fail')
+              }
+            })
+        }
+      </script>
 
       <input type='hidden' name='_next' value='http://localhost:3000' />
       <input type='hidden' name='_captcha' value='false' />

@@ -6,10 +6,11 @@ const portfolioList = Object.values(portfolioObject)
 const menuObject = t('header.menu', { returnObjects: true })
 const menuList = Object.values(menuObject)
 
-const portfolioUsHref = menuList[3].href.replace('/#', '')
+const portfolioUsId = menuList[3].href.replace('/#', '')
 ---
 
 <section
+  id={portfolioUsId}
   class='sm:h-[500px] lg:h-screen grid grid-cols-1 sm:grid-cols-2 relative'
 >
   <div
