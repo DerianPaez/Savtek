@@ -1,15 +1,9 @@
 ---
-const { title, image } = Astro.props
-
-console.log(image)
+const { title, className } = Astro.props
 ---
 
 <section
-  class={`z-20 relative grid place-items-center h-[55vh]  bg-cover bg-no-repeat bg-top ${
-    image
-      ? `bg-[url("${image}")]`
-      : 'bg-[url("/images/tv-installation-banner.png")]'
-  }`}
+  class={`z-20 relative grid place-items-center h-[55vh]  bg-cover bg-no-repeat bg-top ${className}`}
 >
   <div
     class='absolute top-0 right-0 left-0 bottom-0 w-full h-full bg-black opacity-60'
