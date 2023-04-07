@@ -22,8 +22,8 @@
         ]
       },
       { "link": "Portfolio", "href": "/#portfolio" },
-      { "link": "Galeria", "href": "/gallery" },
       { "link": "Testimonios", "href": "/#testimonials" },
+      { "link": "Galeria", "href": "/gallery" },
       { "link": "Contacto", "href": "/#contact" }
     ],
     "button": "754-248-7978"

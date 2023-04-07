@@ -1,13 +1,51 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import Wrapper from "../../components/Wrapper.astro";
 import Layout from "../../layouts/Layout.astro";
+import ServiceBanner from "../../components/ServiceBanner.astro";
 
 changeLanguage("es");
 ---
 
 <Layout>
   <Wrapper>
-    <h1>Galería</h1>
+    <ServiceBanner
+      image='/images/Rectangle57.png'
+      title={t('header.menu.5.link')}
+    />
+    <section
+      class='px-[4%] py-[100px] grid grid-cols-3 grid-rows-3 gap-6 w-full h-[1000px]'
+    >
+      <img
+        class='w-full h-full object-cover row-span-2'
+        src='/images/servicesBanner.png'
+        alt=''
+      />
+      <img
+        class='w-full h-full object-cover row-span-1'
+        src='/images/Rectangle50.png'
+        alt=''
+      />
+      <img
+        class='w-full h-full object-cover row-span-2'
+        src='/images/Rectangle52.png'
+        alt=''
+      />
+      <img
+        class='w-full h-full object-cover row-span-3'
+        src='/images/Rectangle53.png'
+        alt=''
+      />
+      <img
+        class='w-full h-full object-cover row-span-2'
+        src='/images/Rectangle55.png'
+        alt=''
+      />
+      <img
+        class='w-full h-full object-cover row-span-2'
+        src='/images/Rectangle56.png'
+        alt=''
+      />
+    </section>
   </Wrapper>
 </Layout>
