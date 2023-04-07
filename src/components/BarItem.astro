@@ -5,7 +5,7 @@ const { image, title, paragraph, isLastest } = Astro.props
 <article class='w-full grid gap-1 lg:gap-3'>
   <div class='flex flex-col md:flex-row gap-4 lg:items-center'>
     <img class='w-max' src={image} alt={title} />
-    <h3 class='text-2xl font-semibold'>{title}</h3>
+    <h3 class='text-lg md:text-2xl font-semibold'>{title}</h3>
   </div>
   <p class='text-gray leading-8'>{paragraph}</p>
 </article>
