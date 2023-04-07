@@ -1,5 +1,4 @@
 ---
-import Button from './Button.astro'
 import ServiceNabvar from './ServiceNabvar.astro'
 
 const {
@@ -12,15 +11,21 @@ const {
   paragraph2,
   description
 } = Astro.props
+
+console.log(principalImage)
 ---
 
-<article class='grid grid-cols-1 gap-6'>
+<article class='grid grid-cols-1 gap-10'>
   <div id={id} class='relative lg:hidden flex gap-2 items-center justify-end'>
     <h3>Servicios</h3>
     <img src='/icons/nabvarItemDown.svg' alt={title} />
     <ServiceNabvar id='open-nabvar' />
   </div>
-  <img src={principalImage} alt={description && description} />
+  <img
+    class='object-cover object-center max-h-[500px] w-full'
+    src={principalImage}
+    alt={description && description}
+  />
   <h2 class='text-3xl font-bold lg:text-5xl text-white'>
     {title}
   </h2>

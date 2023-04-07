@@ -6,7 +6,9 @@ console.log(image)
 
 <section
   class={`z-20 relative grid place-items-center h-[55vh]  bg-cover bg-no-repeat bg-top ${
-    image ? `bg-[url("${image}")]` : 'bg-[url("/images/servicesBanner.png")]'
+    image
+      ? `bg-[url("${image}")]`
+      : 'bg-[url("/images/tv-installation-banner.png")]'
   }`}
 >
   <div
