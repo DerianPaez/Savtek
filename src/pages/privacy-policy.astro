@@ -1,0 +1,29 @@
+---
+import { t, changeLanguage } from "i18next";
+import Wrapper from "../components/Wrapper.astro";
+import Layout from "../layouts/Layout.astro";
+
+changeLanguage("en");
+
+const policyItemsObject = t("policy.items", { returnObjects: true });
+const policyItemList = Object.values(policyItemsObject);
+---
+
+<Layout>
+  <Wrapper>
+    <section class='pt-[100.45px] lg:pt-[160px] px-[4%] max-w-[1280px] mx-auto'>
+      <h2 class='mb-8 text-3xl font-bold'>{t('policy.title')}</h2>
+      {
+        policyItemList.map((item) => {
+          return (
+            <>
+              <h3 class='mb-2 text-xl font-bold'>{item.title}</h3>
+              <p class='mb-6 font-bold'>{item.paragraph}</p>
+            </>
+          )
+        })
+      }
+      <p class='mb-6'>{t('policy.date')}</p>
+    </section>
+  </Wrapper>
+</Layout>
