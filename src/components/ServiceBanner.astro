@@ -1,10 +1,13 @@
 ---
-const { title, className } = Astro.props
+const { title, image } = Astro.props
 ---
 
-<section
-  class={`z-20 relative grid place-items-center h-[55vh]  bg-cover bg-no-repeat bg-top ${className}`}
->
+<section class='z-20 relative grid place-items-center h-[55vh]'>
+  <img
+    class='absolute h-[55vh] w-full object-cover object-center'
+    src={image}
+    alt={title}
+  />
   <div
     class='absolute top-0 right-0 left-0 bottom-0 w-full h-full bg-black opacity-60'
   >
