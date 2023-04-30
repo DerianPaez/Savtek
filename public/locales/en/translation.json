@@ -1,6 +1,9 @@
 {
-  "site.title": "Savtek System",
-  "site.description": "Savtek System",
+  "site.title": "Savtek Systems",
+  "site.description": "Savtek Systems",
+  "site.canonical": "Savtek Systems",
+  "site.type": "Savtek Systems",
+  "site.siteName": "Savtek Systems",
 
   "header": {
     "menu": [
@@ -79,18 +82,17 @@
         "banner": "/images/tv-installation-banner.png",
         "paragraph": "A security camera system can deter and capture internal and external theft for Residential and Commercial industries.",
         "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Security cameras Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "paragraphSecondary": "Security cameras Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
+        "paragraphMain": "A security camera system can deter and capture internal and external theft for Residential and Commercial industries. In addition, it can be critical by safety to a community protecting the premises by capturing evidence against liability claims.",
         "link": "/security-cameras"
       },
       {
         "title": "Voice/Data",
-        "banner": "",
-        "paragraph": "SAVTEK Systems designs and builds cabling infrastructure for companies of all sizes.",
+        "banner": "/images/tv-installation-banner.png",
+        "paragraph": "Savtek Systems designs and builds cabling infrastructure for companies of all sizes.",
         "imageMain": "/images/tv-installation-principal.jpg",
         "paragraphMain": "Voice/Data Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
         "paragraphSecondary": "Voice/Data Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "link": "/voice-data"
+        "link": "/structured-cabling"
       },
       {
         "title": "Landscape Lighting",
@@ -268,5 +270,71 @@
       }
     ],
     "copyright": "Copyright © 2023 Savtek Systems | All rights reserved"
+  },
+
+  "terms": {
+    "title": "Terms and Conditions of Use",
+    "items": [
+      {
+        "title": "1. Introduction",
+        "paragraph": "By using this landing page, you agree to be bound by these Terms and Conditions of Use. If you do not agree with any of these terms, please do not use this website."
+      },
+      {
+        "title": "2. Intellectual property rights",
+        "paragraph": "All intellectual property rights related to the content, design, logos, images and other elements of this website are the property of SAVTEK SYSTEMS LLC or its licensors. The reproduction, distribution, public communication or transformation of these items without the prior written permission of [company name] or its licensors."
+      },
+      {
+        "title": "3. Use of the contact form",
+        "paragraph": "By providing your personal information through the contact form, you agree that SAVTEK SYSTEMS LLC may use that information to contact you regarding its services. By providing your information, you warrant that it is true, accurate, and up-to-date. "
+      },
+      {
+        "title": "4. Limitation of liability",
+        "paragraph": "SAVTEK SYSTEMS LLC shall not be liable for any damage or loss that may result from the use of this website or the information contained on it. SAVTEK SYSTEMS LLC does not warrant that the website is free of errors, viruses or other items harmful."
+      },
+      {
+        "title": "5. Changes to the terms and conditions",
+        "paragraph": "SAVTEK SYSTEMS LLC reserves the right to modify these Terms and Conditions of Use at any time and without notice. By using this website, you agree to abide by the terms and conditions then in effect."
+      }
+    ],
+    "date": "Date of last update: 04/28/2023"
+  },
+
+  "policy": {
+    "title": "Privacy Policy",
+    "items": [
+      {
+        "title": "1. Collection of personal information",
+        "paragraph": "By using the contact form on this website, you agree to provide your name, email address, phone number and any other information requested. This information will be used exclusively to respond to your inquiries and provide you with information about our services."
+      },
+      {
+        "title": "2. Use of information",
+        "paragraph": "The personal information you provide will be used only for the purposes described in this Privacy Policy and in the Terms and Conditions of Use. We will not share your personal information with third parties without your consent, except as necessary to comply with the law, protect our rights, or comply with legal requirements."
+      },
+      {
+        "title": "3. Information security",
+        "paragraph": "We strive to protect the personal information you provide to us by using appropriate security measures to prevent unauthorized access, disclosure, modification or destruction of such information. However, we cannot guarantee the absolute security of your personal information ."
+      },
+      {
+        "title": "4. Access and rectification of information",
+        "paragraph": "You have the right to access, rectify, update or delete your personal information stored in our systems. To exercise these rights, please contact us via the email address or telephone number provided in this website."
+      },
+      {
+        "title": "5. Changes to the privacy policy",
+        "paragraph": "SAVTEK SYSTEMS LLC reserves the right to change this Privacy Policy at any time and without notice. By using this website, you agree to abide by the privacy policy then in effect."
+      },
+      {
+        "title": "6. Use of cookies",
+        "paragraph": "This website may use cookies and other tracking technologies to improve your browsing experience, analyze website usage, and provide additional functionality. By using this website, you agree to the use of cookies and other tracking technologies. tracking, in accordance with our Cookies Policy, if applicable."
+      },
+      {
+        "title": "7. Links to third-party websites",
+        "paragraph": "Our website may contain links to third-party websites. We are not responsible for the privacy practices or the content of these third-party websites. If you visit these websites, we encourage you to review their privacy policies and terms and conditions before providing any personal information."
+      },
+      {
+        "title": "8. Contact",
+        "paragraph": "If you have any questions or concerns about this Privacy Policy or the treatment of your personal information, please feel free to contact us using the contact information provided on this website."
+      }
+    ],
+    "date": "Date of last update: 04/28/2023"
   }
 }

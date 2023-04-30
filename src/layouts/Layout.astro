@@ -13,7 +13,14 @@ import '@fontsource/inter'
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <meta name='description' content={t('site.description')} />
+    <meta name='og:title' content={t('site.title')} />
+    <meta name='og:description' content={t('site.description')} />
+    <meta name='og:url' content={t('site.canonical')} />
+    <meta name='og:type' content={t('site.type')} />
+    <meta name='og:site_name' content={t('site.siteName')} />
+    <meta name='og:image' content={} />
     <title>{t('site.title')}</title>
+    <link rel='canonical' href={t('site.canonical')} />
     <link
       rel='stylesheet'
       href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'
