@@ -17,7 +17,7 @@
           { "link": "Iluminación", "href": "/landscape-lighting" },
           { "link": "Instalación de TV", "href": "/tv-installation" },
           {
-            "link": "Hogar inteligente/Automatización empresarial",
+            "link": "Automatización Inteligente del Hogar/Negocio",
             "href": "/maintenance-service"
           },
           { "link": "Audio/Video", "href": "/audio-video" }
@@ -226,7 +226,7 @@
             "href": "/services/landscape-lighting"
           },
           {
-            "label": "Hogar inteligente/Automatización empresarial",
+            "label": "Automatización Inteligente del Hogar/Negocio",
             "href": "/services/smart-home"
           },
           { "label": "Audio/Video", "href": "/services/audio-video" }
