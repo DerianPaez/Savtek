@@ -5,7 +5,7 @@ import Button from './Button.astro'
 
 <section id='advertising-id' class='relative overflow-hidden bg-[#0E1113]'>
   <div
-    class='relative z-10 px-[4%] py-[60px] lg:py-[20px] grid gap-8 sm:grid-flow-col sm:place-items-center md:gap-24'
+    class='relative max-h-[400px] z-10 px-[4%] pt-[60px] lg:pt-[20px] grid gap-8 sm:grid-flow-col sm:place-items-center md:gap-24'
   >
     <div class='grid gap-5'>
       <h3 class='text-2xl left-10 md:text-3xl md:leading-10'>
@@ -15,8 +15,12 @@ import Button from './Button.astro'
         <Button name={t('advertising.content.button')} />
       </a>
     </div>
-    <figure class='block w-full'>
-      <img src='/images/advertising.png' alt={t('advertising.content.image')} />
+    <figure class='block w-full h-full overflow-hidden'>
+      <img
+        class='h-full w-full object-contain'
+        src='/images/advertising.png'
+        alt={t('advertising.content.image')}
+      />
     </figure>
   </div>
   <div
