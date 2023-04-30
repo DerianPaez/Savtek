@@ -1,92 +1,102 @@
 ---
-import { changeLanguage, t } from "i18next";
-import Wrapper from "../../components/Wrapper.astro";
-import Layout from "../../layouts/Layout.astro";
-import ServiceBanner from "../../components/ServiceBanner.astro";
-import ServiceContent from "../../components/ServiceContent.astro";
-import ServiceNabvar from "../../components/ServiceNabvar.astro";
+import { changeLanguage, t } from 'i18next'
+import Wrapper from '../../components/Wrapper.astro'
+import Layout from '../../layouts/Layout.astro'
+import ServiceBanner from '../../components/ServiceBanner.astro'
+import ServiceContent from '../../components/ServiceContent.astro'
+import ServiceNabvar from '../../components/ServiceNabvar.astro'
 
-changeLanguage("en");
+changeLanguage('en')
 
 export function getStaticPaths() {
-    const pages = [
-        {
-            service: "security-cameras",
-            title: "services.content.0.title",
-            banner: "/images/tv-installation-banner.png",
-            imageMain: "/images/tv-installation-principal.jpg",
-            paragraphMain: "services.content.0.paragraphMain",
-            imageSecondary1: "/images/tv-installation-secondary-1.png",
-            imageSecondary2: "/images/tv-installation-secondary-2.png",
-            paragraphSecondary: "services.content.0.paragraphSecondary"
-        },
-        {
-            service: "voice-data",
-            title: "services.content.1.title",
-            banner: "/images/tv-installation-banner.png",
-            imageMain: "services.content.1.imageMain",
-            paragraphMain: "services.content.1.paragraphMain",
-            imageSecondary1: "/images/tv-installation-secondary-1.png",
-            imageSecondary2: "/images/tv-installation-secondary-2.png",
-            paragraphSecondary: "services.content.1.paragraphSecondary"
-        },
-        {
-            service: "landscape-lighting",
-            title: "services.content.2.title",
-            banner: "/images/tv-installation-banner.png",
-            imageMain: "services.content.2.imageMain",
-            paragraphMain: "services.content.2.paragraphMain",
-            imageSecondary1: "/images/tv-installation-secondary-1.png",
-            imageSecondary2: "/images/tv-installation-secondary-2.png",
-            paragraphSecondary: "services.content.2.paragraphSecondary"
-        },
-        {
-            service: "tv-installation",
-            title: "services.content.3.title",
-            banner: "/images/tv-installation-banner.png",
-            imageMain: "services.content.3.imageMain",
-            paragraphMain: "services.content.3.paragraphMain",
-            imageSecondary1: "/images/tv-installation-secondary-1.png",
-            imageSecondary2: "/images/tv-installation-secondary-2.png",
-            paragraphSecondary: "services.content.3.paragraphSecondary"
-        },
-        {
-            service: "audio-system",
-            title: "services.content.4.title",
-            banner: "/images/tv-installation-banner.png",
-            imageMain: "services.content.4.imageMain",
-            paragraphMain: "services.content.4.paragraphMain",
-            imageSecondary1: "/images/tv-installation-secondary-1.png",
-            imageSecondary2: "/images/tv-installation-secondary-2.png",
-            paragraphSecondary: "services.content.4.paragraphSecondary"
-        },
-        {
-            service: "maintenance-service",
-            title: "services.content.5.title",
-            banner: "/images/tv-installation-banner.png",
-            imageMain: "services.content.5.imageMain",
-            paragraphMain: "services.content.5.paragraphMain",
-            imageSecondary1: "/images/tv-installation-secondary-1.png",
-            imageSecondary2: "/images/tv-installation-secondary-2.png",
-            paragraphSecondary: "services.content.5.paragraphSecondary"
+  const pages = [
+    {
+      service: 'security-cameras',
+      title: 'services.content.0.title',
+      banner: '/images/security-cameras-banner.jpeg',
+      imageMain: '/images/security-cameras-principal.jpeg',
+      paragraphMain: 'services.content.0.paragraphMain',
+      imageSecondary1: '/images/security-cameras-secondary-1.jpeg',
+      imageSecondary2: '/images/security-cameras-secondary-2.jpeg'
+    },
+    {
+      service: 'structured-cabling',
+      title: 'services.content.1.title',
+      banner: '/images/structured-cabling-banner.jpeg',
+      imageMain: '/images/structured-cabling-principal.jpeg',
+      paragraphMain: 'services.content.1.paragraphMain',
+      imageSecondary1: '/images/structured-cabling-secondary-1.jpeg',
+      imageSecondary2: '/images/structured-cabling-secondary-2.jpeg'
+    },
+    {
+      service: 'landscape-lighting',
+      title: 'services.content.2.title',
+      banner: '/images/landscape-lighting-banner.jpeg',
+      imageMain: '/images/landscape-lighting-principal.jpeg',
+      paragraphMain: 'services.content.2.paragraphMain',
+      imageSecondary1: '/images/landscape-lighting-secondary-1.jpeg',
+      imageSecondary2: '/images/landscape-lighting-secondary-2.jpeg'
+    },
+    {
+      service: 'tv-installation',
+      title: 'services.content.3.title',
+      banner: '/images/tv-installation-banner.jpeg',
+      imageMain: '/images/tv-installation-principal.jpg',
+      paragraphMain: 'services.content.3.paragraphMain',
+      imageSecondary1: '/images/tv-installation-secondary-1.png',
+      imageSecondary2: '/images/tv-installation-secondary-2.png'
+    },
+    {
+      service: 'audio-system',
+      title: 'services.content.4.title',
+      banner: '/images/audio-system-banner.jpeg',
+      imageMain: '/images/audio-system-principal.jpeg',
+      paragraphMain: 'services.content.4.paragraphMain',
+      imageSecondary1: '/images/audio-system-secondary-1.jpeg',
+      imageSecondary2: '/images/audio-system-secondary-2.jpeg'
+    },
+    {
+      service: 'maintenance-service',
+      title: 'services.content.5.title',
+      banner: '/images/maintenance-service-banner.jpeg',
+      imageMain: '/images/maintenance-service-principal.jpeg',
+      paragraphMain: 'services.content.5.paragraphMain',
+      imageSecondary1: '/images/maintenance-service-secondary-1.jpeg',
+      imageSecondary2: '/images/maintenance-service-secondary-2.jpeg'
+    }
+  ]
+  return pages.map(
+    ({
+      service,
+      title,
+      banner,
+      imageMain,
+      paragraphMain,
+      imageSecondary1,
+      imageSecondary2
+    }) => {
+      return {
+        params: { service },
+        props: {
+          title,
+          banner,
+          imageMain,
+          paragraphMain,
+          imageSecondary1,
+          imageSecondary2
         }
-    ];
-    return pages.map(({ service, title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2, paragraphSecondary }) => {
-        return {
-            params: { service },
-            props: {
-                title,
-                banner,
-                imageMain,
-                paragraphMain,
-                imageSecondary1,
-                imageSecondary2,
-                paragraphSecondary
-            }
-        };
-    });
+      }
+    }
+  )
 }
-const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2, paragraphSecondary } = Astro.props;
+const {
+  title,
+  banner,
+  imageMain,
+  paragraphMain,
+  imageSecondary1,
+  imageSecondary2
+} = Astro.props
 ---
 
 <Layout>
@@ -102,7 +112,6 @@ const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary
         paragraph1={t(paragraphMain)}
         secondaryImage1={t(imageSecondary1)}
         secondaryImage2={t(imageSecondary2)}
-        paragraph2={t(paragraphSecondary)}
       />
       <ServiceNabvar id='open-nabvar' />
     </div>
