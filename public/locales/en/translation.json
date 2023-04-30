@@ -40,16 +40,16 @@
 
   "bar": [
     {
-      "title": "Customized Solutions",
-      "paragraph": "We design a personalized security solution that fits your home or business."
+      "title": "About Us",
+      "paragraph": "SAVTEK Systems is a reputable company that is dedicated to building Integrated Security Systems and Audio/Video installations for the Residential and Commercial sector. Offering Our clients, the best quality in equipment and services."
     },
     {
-      "title": "Experience & Knowledge",
-      "paragraph": "With over 7 years of experience in the industry, we are experts in the installation and maintenance of security systems."
+      "title": "Vision",
+      "paragraph": "We strive to be leaders in our industry, driving growth and continuous innovation while maintaining our commitment to excellence and customer satisfaction."
     },
     {
-      "title": "Excellent Customer Service",
-      "paragraph": "We are committed to providing exceptional service from consultation to project completion."
+      "title": "Mision",
+      "paragraph": "Our mission is to provide innovative, high-quality solutions that exceed our customers' expectations and improve their quality of life."
     }
   ],
 
@@ -187,19 +187,19 @@
       "paragraph": "We strive to offer exceptional security services and satisfy our customers. Here's what some of them have to say about our work:",
       "items": [
         {
-          "person": "Sophia Clark",
+          "person": "Ben Finkel",
           "role": "Client",
-          "paragraph": "“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempore atque harum. ng elit. Quia tempore atque haru”"
+          "paragraph": "“Excellent Services and support. I have used Savtek twice now and I am always impressed by the courtesy, professionalism and technical acumen. I highly recommend them for audio/video/and networking.  The workmanship is very good and the costs are very competitive.”"
         },
         {
-          "person": "Marcus Thuram",
+          "person": "Julie Gordon",
           "role": "Client",
-          "paragraph": "“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempore atque harum. ng elit. Quia tempore atque haru”"
+          "paragraph": "“We have worked with Saul at Savtek on several projects and he has always been reliable and done exceptional work. He does not complete a job until the client is completely satisfied with his work. Highly recommend.”"
         },
         {
-          "person": "Jade Smith",
+          "person": "Sofia Vozzi",
           "role": "Client",
-          "paragraph": "“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempore atque harum. ng elit. Quia tempore atque haru”"
+          "paragraph": "“Amazing job. Surprisingly clean job. Called to set an apointment and got the job done the same day at an incredibly reasonable price. Will keep using Savtek Systems again and again. Thank you!”"
         }
       ]
     }

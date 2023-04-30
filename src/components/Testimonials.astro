@@ -11,6 +11,12 @@ const menuObject = t('header.menu', { returnObjects: true })
 const menuList = Object.values(menuObject)
 
 const testimonialsUsId = menuList[4].href.replace('/#', '')
+
+const testimonyImage = [
+  'images/testimonial-1.png',
+  'images/testimonial-2.png',
+  'images/testimonial-3.png'
+]
 ---
 
 <section id={testimonialsUsId}>
@@ -28,7 +34,7 @@ const testimonialsUsId = menuList[4].href.replace('/#', '')
         testimonialList.map((item, index) => {
           return (
             <Testimonial
-              image={`/images/testimonial-${index + 1}.png`}
+              image={testimonyImage[index]}
               name={item.person}
               role={item.role}
               paragraph={item.paragraph}
