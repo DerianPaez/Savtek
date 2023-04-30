@@ -17,8 +17,7 @@ export function getStaticPaths() {
             imageMain: "/images/security-cameras-principal.jpeg",
             paragraphMain: "services.content.0.paragraphMain",
             imageSecondary1: "/images/security-cameras-secondary-1.jpeg",
-            imageSecondary2: "/images/security-cameras-secondary-2.jpeg",
-            paragraphSecondary: "services.content.0.paragraphSecondary"
+            imageSecondary2: "/images/security-cameras-secondary-2.jpeg"
         },
         {
             service: "structured-cabling",
@@ -27,8 +26,7 @@ export function getStaticPaths() {
             imageMain: "/images/structured-cabling-principal.jpeg",
             paragraphMain: "services.content.1.paragraphMain",
             imageSecondary1: "/images/structured-cabling-secondary-1.jpeg",
-            imageSecondary2: "/images/structured-cabling-secondary-2.jpeg",
-            paragraphSecondary: "services.content.1.paragraphSecondary"
+            imageSecondary2: "/images/structured-cabling-secondary-2.jpeg"
         },
         {
             service: "landscape-lighting",
@@ -37,8 +35,7 @@ export function getStaticPaths() {
             imageMain: "/images/landscape-lighting-principal.jpeg",
             paragraphMain: "services.content.2.paragraphMain",
             imageSecondary1: "/images/landscape-lighting-secondary-1.jpeg",
-            imageSecondary2: "/images/landscape-lighting-secondary-2.jpeg",
-            paragraphSecondary: "services.content.2.paragraphSecondary"
+            imageSecondary2: "/images/landscape-lighting-secondary-2.jpeg"
         },
         {
             service: "tv-installation",
@@ -47,31 +44,37 @@ export function getStaticPaths() {
             imageMain: "/images/tv-installation-principal.jpg",
             paragraphMain: "services.content.3.paragraphMain",
             imageSecondary1: "/images/tv-installation-secondary-1.png",
-            imageSecondary2: "/images/tv-installation-secondary-2.png",
-            paragraphSecondary: "services.content.3.paragraphSecondary"
+            imageSecondary2: "/images/tv-installation-secondary-2.png"
         },
         {
-            service: "audio-system",
+            service: "audio-video",
             title: "services.content.4.title",
-            banner: "/images/audio-system-banner.jpeg",
-            imageMain: "/images/audio-system-principal.jpeg",
+            banner: "/images/audio-video-banner.jpeg",
+            imageMain: "/images/audio-video-principal.jpeg",
             paragraphMain: "services.content.4.paragraphMain",
-            imageSecondary1: "/images/audio-system-secondary-1.jpeg",
-            imageSecondary2: "/images/audio-system-secondary-2.jpeg",
-            paragraphSecondary: "services.content.4.paragraphSecondary"
+            imageSecondary1: "/images/audio-video-secondary-1.jpeg",
+            imageSecondary2: "/images/audio-video-secondary-2.jpeg"
         },
         {
-            service: "maintenance-service",
+            service: "smart-home",
             title: "services.content.5.title",
-            banner: "/images/maintenance-service-banner.jpeg",
-            imageMain: "/images/maintenance-service-principal.jpeg",
+            banner: "/images/smart-home-banner.jpeg",
+            imageMain: "/images/smart-home-principal.jpeg",
             paragraphMain: "services.content.5.paragraphMain",
-            imageSecondary1: "/images/maintenance-service-secondary-1.jpeg",
-            imageSecondary2: "/images/maintenance-service-secondary-2.jpeg",
-            paragraphSecondary: "services.content.5.paragraphSecondary"
+            imageSecondary1: "/images/smart-home-secondary-1.jpeg",
+            imageSecondary2: "/images/smart-home-secondary-2.jpeg"
         }
+        // {
+        //   service: 'access-control',
+        //   title: 'services.content.6.title',
+        //   banner: '/images/access-control-banner.jpeg',
+        //   imageMain: '/images/access-control-principal.jpeg',
+        //   paragraphMain: 'services.content.6.paragraphMain',
+        //   imageSecondary1: '/images/access-control-secondary-1.jpeg',
+        //   imageSecondary2: '/images/access-control-secondary-2.jpeg'
+        // }
     ];
-    return pages.map(({ service, title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2, paragraphSecondary }) => {
+    return pages.map(({ service, title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2 }) => {
         return {
             params: { service },
             props: {
@@ -80,13 +83,12 @@ export function getStaticPaths() {
                 imageMain,
                 paragraphMain,
                 imageSecondary1,
-                imageSecondary2,
-                paragraphSecondary
+                imageSecondary2
             }
         };
     });
 }
-const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2, paragraphSecondary } = Astro.props;
+const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary2 } = Astro.props;
 ---
 
 <Layout>
@@ -102,7 +104,6 @@ const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary
         paragraph1={t(paragraphMain)}
         secondaryImage1={t(imageSecondary1)}
         secondaryImage2={t(imageSecondary2)}
-        paragraph2={t(paragraphSecondary)}
       />
       <ServiceNabvar id='open-nabvar' />
     </div>

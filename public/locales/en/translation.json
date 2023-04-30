@@ -8,23 +8,18 @@
   "header": {
     "menu": [
       { "link": "Home", "href": "/" },
-      { "link": "About us", "href": "/#about-us" },
       {
         "link": "Services",
         "href": "/services",
         "submenu": [
           { "link": "Security Cameras", "href": "/security-cameras" },
-          { "link": "Voice/Data", "href": "/voice-data" },
+          { "link": "Structured Cabling", "href": "/structured-cabling" },
           { "link": "Landscape Lighting", "href": "/landscape-lighting" },
           { "link": "TV Installation", "href": "/tv-installation" },
-          { "link": "Audio System", "href": "/audio-system" },
-          {
-            "link": "Maintenance service",
-            "href": "/maintenance-service"
-          }
+          { "link": "Smart Home/Business Automation", "href": "/smart-home" },
+          { "link": "Audio/Video", "href": "/audio-video" }
         ]
       },
-      { "link": "Portfolio", "href": "/#portfolio" },
       { "link": "Testimonials", "href": "/#testimonials" },
       { "link": "Gallery", "href": "/gallery" },
       { "link": "Contact", "href": "/#contact" }
@@ -79,67 +74,40 @@
     "content": [
       {
         "title": "Security Cameras",
-        "banner": "/images/tv-installation-banner.png",
         "paragraph": "A security camera system can deter and capture internal and external theft for Residential and Commercial industries.",
-        "imageMain": "/images/tv-installation-principal.jpg",
         "paragraphMain": "A security camera system can deter and capture internal and external theft for Residential and Commercial industries. In addition, it can be critical by safety to a community protecting the premises by capturing evidence against liability claims.",
         "link": "/security-cameras"
       },
       {
-        "title": "Voice/Data",
-        "banner": "/images/tv-installation-banner.png",
+        "title": "Structured Cabling",
         "paragraph": "Savtek Systems designs and builds cabling infrastructure for companies of all sizes.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Voice/Data Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "paragraphSecondary": "Voice/Data Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
+        "paragraphMain": "Savtek Systems designs and builds cabling infrastructure for companies of all sizes. We follow US cabling industry and cabling manufacturers (ANSI) and (TIA) it is not just that installation of the cabling that matters but also the maintenance of it. We offer the following types of cabling: CAT5e, CAT6, CAT6a, CAT7, Fiber Optic, Patch Panels, COAXIAL CABLE, Speaker Cable, Wire Management, Testing and Certification",
         "link": "/structured-cabling"
       },
       {
         "title": "Landscape Lighting",
-        "banner": "",
         "paragraph": "Outdoor lighting radically changes the way your house or business is perceived.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Landscape Lighting Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "paragraphSecondary": "Landscape Lighting Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
+        "paragraphMain": "Outdoor lighting radically changes the way your house or business is perceived. We design and install high-quality systems that create a welcoming environment. The satisfaction of our customers sets us apart from the competition.",
         "link": "/landscape-lighting"
       },
       {
         "title": "TV Installation",
-        "banner": "",
-        "paragraph": " SAVTEK Systems provides TV Mounting done by experts you get lifetime warranty on labor and parts.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "TV Installation Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "paragraphSecondary": "TV Installation Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
+        "paragraph": "Savtek Systems provides TV Mounting done by experts you get lifetime warranty on labor and parts.",
+        "paragraphMain": "Savtek Systems provides TV Mounting done by experts you get lifetime warranty on labor and parts. Guarantee satisfaction or you get your money back. Our TV installations are done on any type of wall, from wood to marble or ceramic. Service is provided in residential areas and businesses too.",
         "link": "/tv-installation"
       },
       {
-        "title": "Audio System",
-        "banner": "",
+        "title": "Audio/Video",
         "paragraph": "Surround yourself with soothing music at the comfort of your home or office.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Audio System Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "paragraphSecondary": "Audio System Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "link": "/audio-system"
+        "paragraphMain": "Surround yourself with soothing music at the comfort of your home or office. Why not have this control from the tip of your fingers? With our powerful speakers and amplifiers these wishes can become a reality.",
+        "link": "/audio-video"
       },
       {
         "title": "Smart Home/Business Automation",
-        "banner": "",
         "paragraph": "Automation makes your life more convenient by making certain tasks occur automatically from the push of a button.",
         "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Service & Maintenance Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "paragraphSecondary": "Service & Maintenance Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "link": "/maintenance-service"
-      },
-      {
-        "title": "Access Control",
-        "banner": "",
-        "paragraph": "Access Control Systems are most used to control entry to exterior doors of buildings.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Access Control Systems are most used to control entry to exterior doors of buildings. Controls access to certain areas located within the building at the same time restricting access to unauthorized people.",
-        "imageSecondary-1": "/images/tv-installation-secondary-1.png",
-        "imageSecondary-2": "/images/tv-installation-secondary-2.png",
-        "paragraphSecondary": "Service & Maintenance Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business i n real-time and receive instant alerts on your mobile device. Protect what matters most with our smart security systems. Monitor your home or business in real-time and receive instant alerts on your mobile device.",
-        "link": "/maintenance-service"
+        "paragraphMain": "Automation makes your life more convenient by making certain tasks occur automatically from the push of a button or better yet by voice command. Imagine if you can walk up to your kitchen and your coffee starts making and your alarm disarms at a set time? Take pride in making your life easier.",
+        "link": "/smart-home"
       }
     ],
     "button": "Read more",
@@ -239,24 +207,25 @@
         "title": "Services",
         "links": [
           { "label": "Security Cameras", "href": "/services/security-cameras" },
-          { "label": "Voice/Data", "href": "/services/voice-data" },
+          {
+            "label": "Structured Cabling",
+            "href": "/services/structured-cabling"
+          },
           { "label": "TV Installation", "href": "/services/tv-installation" },
           {
             "label": "Landscape Lighting",
             "href": "/services/landscape-lighting"
           },
-          { "label": "Audio System", "href": "/services/audio-system" },
           {
-            "label": "Service & Maintenance",
-            "href": "/services/maintenance-service"
-          }
+            "label": "Smart Home/Business Automation",
+            "href": "/services/smart-home"
+          },
+          { "label": "Audio/Video", "href": "/services/audio-video" }
         ]
       },
       {
         "title": "Company",
         "links": [
-          { "label": "About Us", "href": "/#about-us" },
-          { "label": "Portfolio", "href": "/#portfolio" },
           { "label": "Gallery", "href": "/gallery" },
           { "label": "Contact us", "href": "/#contact" }
         ]

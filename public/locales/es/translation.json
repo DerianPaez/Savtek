@@ -8,23 +8,21 @@
   "header": {
     "menu": [
       { "link": "Inicio", "href": "/" },
-      { "link": "Nosotros", "href": "/#about-us" },
       {
         "link": "Servicios",
         "href": "/services",
         "submenu": [
           { "link": "Cámaras de Seguridad", "href": "/security-cameras" },
-          { "link": "Voz/Datos", "href": "/voice-data" },
+          { "link": "Cableado Estructurado", "href": "/structured-cabling" },
           { "link": "Iluminación", "href": "/landscape-lighting" },
           { "link": "Instalación de TV", "href": "/tv-installation" },
-          { "link": "Sistema de Sonido", "href": "/audio-system" },
           {
-            "link": "Servicio de Mantenimiento",
+            "link": "Hogar inteligente/Automatización empresarial",
             "href": "/maintenance-service"
-          }
+          },
+          { "link": "Audio/Video", "href": "/audio-video" }
         ]
       },
-      { "link": "Portfolio", "href": "/#portfolio" },
       { "link": "Testimonios", "href": "/#testimonials" },
       { "link": "Galería", "href": "/gallery" },
       { "link": "Contacto", "href": "/#contact" }
@@ -79,67 +77,39 @@
     "content": [
       {
         "title": "Cámaras de Seguridad",
-        "banner": "/images/tv-installation-banner.png",
         "paragraph": "Un sistema de cámaras de seguridad puede disuadir y capturar el robo interno y externo en las industrias residenciales y comerciales.",
-        "imageMain": "/images/tv-installation-principal.jpg",
         "paragraphMain": "Un sistema de cámaras de seguridad puede detectar y capturar robos internos y externos para industrias residenciales y comerciales. Además, puede ser fundamental para la seguridad de una comunidad que protege las instalaciones mediante la captura de pruebas contra reclamaciones de responsabilidad.",
         "link": "/security-cameras"
       },
       {
-        "title": "Voz/Datos",
-        "banner": "",
-        "paragraph": "SAVTEK Systems diseña y construye infraestructuras de cableado para empresas de todos los tamaños.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Voz/datos Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "paragraphSecondary": "Voz/datos Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
+        "title": "Cableado estructurado",
+        "paragraph": "Savtek Systems diseña y construye infraestructuras de cableado para empresas de todos los tamaños.",
+        "paragraphMain": "Savtek Systems diseña y construye infraestructura de cableado para empresas de todos los tamaños. Seguimos a la industria del cableado de EE. UU. y a los fabricantes de cableado (ANSI) y (TIA), no se trata solo de que la instalación del cableado que importa, pero también el mantenimiento de la misma. Ofrecemos los siguientes tipos de cableado: CAT5e, CAT6, CAT6a, CAT7, Fibra Óptica, Patch Panels, CABLE COAXIAL, Cable de Altavoces, Gestión de Cableado, Pruebas y Certificación",
         "link": "/structured-cabling"
       },
       {
         "title": "Iluminación",
-        "banner": "",
         "paragraph": "La iluminación exterior cambia radicalmente la forma en que se percibe su casa o negocio.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Iluminacion Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "paragraphSecondary": "Iluminacion Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
+        "paragraphMain": "La iluminación exterior cambia radicalmente la forma en que se percibe tu casa o negocio. Diseñamos e instalamos sistemas de alta calidad que crean un ambiente acogedor. La satisfacción de nuestros clientes nos diferencia de la competencia.",
         "link": "/landscape-lighting"
       },
       {
         "title": "Instalación de TV",
-        "banner": "",
-        "paragraph": "SAVTEK Systems ofrece montaje de televisores realizado por expertos y obtiene una garantía de por vida en mano de obra y piezas.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Instalación de TV Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "paragraphSecondary": "Instalación de TV Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
+        "paragraph": "Savtek Systems ofrece montaje de televisores realizado por expertos y obtiene una garantía de por vida en mano de obra y piezas.",
+        "paragraphMain": "Savtek Systems provides TV Mounting done by experts you get lifetime warranty on labor and parts. Guarantee satisfaction or you get your money back. Our TV installations are done on any type of wall, from wood to marble or ceramic. Service is provided in residential areas and businesses too.",
         "link": "/tv-installation"
       },
       {
-        "title": "Sistema de Sonido",
-        "banner": "",
+        "title": "Audio/Video",
         "paragraph": "Rodearse de música relajante en la comodidad de su hogar u oficina.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Sistema de sonido Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "paragraphSecondary": "Sistema de sonido Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "link": "/audio-system"
+        "paragraphMain": "Rodéate de música relajante en la comodidad de tu hogar u oficina. ¿Por qué no tener este control desde la punta de los dedos? Con nuestros potentes altavoces y amplificadores, estos deseos pueden convertirse en realidad.",
+        "link": "/audio-video"
       },
       {
         "title": "Automatización Inteligente del Hogar/Negocio",
-        "banner": "",
-        "paragraph": "a automatización hace que su vida sea más conveniente al hacer que ciertas tareas ocurran automáticamente con solo presionar un botón.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Servicio de mantenimiento Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "paragraphSecondary": "Servicio de mantenimiento Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "link": "/maintenance-service"
-      },
-      {
-        "title": "Acceso de Control",
-        "banner": "",
-        "paragraph": "Los sistemas de control de acceso se utilizan principalmente para controlar la entrada a las puertas exteriores de los edificios.",
-        "imageMain": "/images/tv-installation-principal.jpg",
-        "paragraphMain": "Los sistemas de control de acceso se utilizan principalmente para controlar la entrada a las puertas exteriores de los edificios. Al mismo tiempo, controlan el acceso a ciertas áreas ubicadas dentro del edificio restringiendo el acceso a personas no autorizadas.",
-        "imageSecondary-1": "/images/tv-installation-secondary-1.png",
-        "imageSecondary-2": "/images/tv-installation-secondary-2.png",
-        "paragraphSecondary": "Servicio de mantenimiento Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil. Protege lo más importante con nuestros sistemas de seguridad inteligentes. Supervise su hogar o negocio en tiempo real y reciba alertas instantáneas en su dispositivo móvil.",
-        "link": "/maintenance-service"
+        "paragraph": "La automatización hace que su vida sea más conveniente al hacer que ciertas tareas ocurran automáticamente con solo presionar un botón.",
+        "paragraphMain": "La automatización hace que su vida sea más conveniente al hacer que ciertas tareas se realicen automáticamente con solo presionar un botón o, mejor aún, mediante un comando de voz. Imagínese si puede caminar hasta su cocina y su café comienza a prepararse y su alarma se desactiva a una hora determinada. Enorgullécete de hacer tu vida más fácil.",
+        "link": "/smart-home"
       }
     ],
     "button": "Leer más",
@@ -243,7 +213,10 @@
             "label": "Cámaras de seguridad",
             "href": "/services/security-cameras"
           },
-          { "label": "Voz/Datos", "href": "/services/voice-data" },
+          {
+            "label": "Cableado Estructurado",
+            "href": "/services/structured-cabling"
+          },
           {
             "label": "Instalación de TV",
             "href": "/services/tv-installation"
@@ -252,18 +225,16 @@
             "label": "Iluminación",
             "href": "/services/landscape-lighting"
           },
-          { "label": "Sistema de audio", "href": "/services/audio-system" },
           {
-            "label": "Servicio de mantenimiento",
-            "href": "/services/maintenance-service"
-          }
+            "label": "Hogar inteligente/Automatización empresarial",
+            "href": "/services/smart-home"
+          },
+          { "label": "Audio/Video", "href": "/services/audio-video" }
         ]
       },
       {
         "title": "Company",
         "links": [
-          { "label": "Sobre Nosotros", "href": "/#about-us" },
-          { "label": "Portafolio", "href": "/#portfolio" },
           { "label": "Galería", "href": "/gallery" },
           { "label": "Contáctanos", "href": "/#contact" }
         ]
