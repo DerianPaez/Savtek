@@ -12,12 +12,7 @@ const {
 } = Astro.props
 ---
 
-<article class='grid grid-cols-1 gap-10'>
-  <div id={id} class='relative lg:hidden flex gap-2 items-center justify-end'>
-    <h3>Servicios</h3>
-    <img src='/icons/navbar-item-down.svg' alt={title} />
-    <ServiceNabvar id='open-nabvar' />
-  </div>
+<article class='grid grid-cols-1 gap-10 max-w-5xl mx-auto'>
   <img
     class='object-cover object-center max-h-[500px] w-full'
     src={principalImage}
