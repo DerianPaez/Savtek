@@ -17,7 +17,7 @@ module.exports = {
         secondary: '#1181BA'
       },
       gridTemplateColumns: {
-        header: 'max-content max-content 1fr max-content max-content',
+        header: 'max-content 1fr max-content max-content',
         services: '1fr 0.4fr'
       }
     }
