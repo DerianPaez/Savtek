@@ -50,6 +50,14 @@ import '@fontsource/inter'
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
+      img {
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
     </style>
     <script
       is:inline
@@ -57,5 +65,15 @@ import '@fontsource/inter'
     ></script>
     <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'
     ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var images = document.getElementsByTagName('img')
+        for (var i = 0; i < images.length; i++) {
+          images[i].addEventListener('contextmenu', function (e) {
+            e.preventDefault()
+          })
+        }
+      })
+    </script>
   </body>
 </html>
