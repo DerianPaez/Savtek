@@ -94,9 +94,7 @@ const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary
 <Layout>
   <Wrapper>
     <ServiceBanner image={banner} title={t(title)} />
-    <div
-      class='px-[4%] py-[50px] lg:py-[100px] lg:grid lg:grid-cols-services gap-8'
-    >
+    <div class='px-[4%] py-[50px] lg:py-[100px] lg:grid gap-8'>
       <ServiceContent
         id='services-dropdown'
         title={t(title)}
@@ -105,7 +103,6 @@ const { title, banner, imageMain, paragraphMain, imageSecondary1, imageSecondary
         secondaryImage1={t(imageSecondary1)}
         secondaryImage2={t(imageSecondary2)}
       />
-      <ServiceNabvar id='open-nabvar' />
     </div>
   </Wrapper>
 </Layout>
