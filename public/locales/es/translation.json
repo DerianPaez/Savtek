@@ -24,7 +24,7 @@
         ]
       },
       { "link": "Testimonios", "href": "/#testimonials" },
-      { "link": "Galería", "href": "/gallery" },
+      { "link": "Nuestro trabajo", "href": "/gallery" },
       { "link": "Contacto", "href": "/#contact" }
     ],
     "button": "754-248-7978"
@@ -34,6 +34,24 @@
     "content": {
       "legend": "Savtek System",
       "title": "Ofrecemos Seguridad Inteligente",
+      "texts": [
+        {
+          "text": "Tu Hogar, A Tu Manera, Más Inteligente Automatiza la comodidad, al alcance de tu mano",
+          "alt": "Tu Hogar, A Tu Manera, Más Inteligente Automatiza la comodidad, al alcance de tu mano"
+        },
+        {
+          "text": "Toma el Control con Nuestras Soluciones de Vigilancia",
+          "alt": "Toma el Control con Nuestras Soluciones de Vigilancia"
+        },
+        {
+          "text": "Iluminación de paisajes - El ambiente que te distingue",
+          "alt": "El ambiente que te distingue"
+        },
+        {
+          "text": "Control de Acceso para el Mundo Moderno",
+          "alt": "Control de Acceso para el Mundo Moderno"
+        }
+      ],
       "paragraph": "Protege lo que más importa con nuestros sistemas de seguridad inteligente. Monitorea tu hogar, negocio o empresa en tiempo real y recibe alertas instantáneas en tu dispositivo móvil.",
       "button": "Contáctanos ->"
     }

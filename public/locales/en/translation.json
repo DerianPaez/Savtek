@@ -21,7 +21,7 @@
         ]
       },
       { "link": "Testimonials", "href": "/#testimonials" },
-      { "link": "Gallery", "href": "/gallery" },
+      { "link": "Our work", "href": "/gallery" },
       { "link": "Contact", "href": "/#contact" }
     ],
     "button": "754-248-7978"
@@ -31,6 +31,24 @@
     "content": {
       "legend": "Savtek System",
       "title": "We offer Smart Security",
+      "texts": [
+        {
+          "text": "Your Home, Your Way, Smarter\n Automate comfort, at your fingertips",
+          "alt": "Your Home, Your Way, Smarter Automate comfort, at your fingertips"
+        },
+        {
+          "text": "Be in Control with Our Surveillance Solutions",
+          "alt": "Be in Control with Our Surveillance Solutions"
+        },
+        {
+          "text": "Landscape lighting - The ambiance that sets you apart",
+          "alt": "The ambiance that sets you apart"
+        },
+        {
+          "text": "Access Control for the Modern World",
+          "alt": "Access Control for the Modern World"
+        }
+      ],
       "paragraph": "Protect what matters most with our smart security systems. Monitor your home, business or company in real-time and receive instant alerts on your mobile device.",
       "button": "Contact us ->"
     }
